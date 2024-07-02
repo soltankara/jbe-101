@@ -1,5 +1,7 @@
+package src;
+
 public class House {
-    //House
+    //src.House
     int numberOfBedrooms = 3;
     int numberOfBathrooms = 2;
     boolean hasPool = false;

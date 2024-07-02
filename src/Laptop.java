@@ -1,5 +1,7 @@
-public class Table {
-    //Table
+package src;
+
+public class Laptop {
+    //src.Table
     int legs = 4;
     String color = "brown";
     String material = "wood";

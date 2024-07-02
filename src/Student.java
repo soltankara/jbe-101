@@ -1,5 +1,7 @@
+package src;
+
 public class Student {
-    //Student
+    //src.Student
     int id = 220106022;
     String course = "II";
     int age = 25;

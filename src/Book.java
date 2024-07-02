@@ -1,5 +1,7 @@
+package src;
+
 public class Book {
-    //Book
+    //src.Book
     int numberOfPages = 248;
     String title = "The Picture of Dorian Gray";
     String author = "Oscar Wilde";

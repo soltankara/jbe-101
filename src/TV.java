@@ -1,5 +1,7 @@
+package src;
+
 public class TV {
-    //TV
+    //src.TV
     String brand = "LG";
     int screenSizeInInches = 120;
     boolean isSmartTV = true;

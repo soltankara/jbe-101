@@ -1,6 +1,8 @@
+package src;
+
 public class Car {
     public static void main(String[] args) {
-        //Car
+        //src.Car
         String brand = "Mercedes";
         String color = "black";
         int wheels = 4;

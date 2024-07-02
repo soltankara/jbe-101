@@ -1,5 +1,7 @@
+package src;
+
 public class Smartphone {
-    //Smartphone
+    //src.Smartphone
     String brand = "Xiaomi";
     String processor = "Dimensity 1080";
     String OS = "Android";
