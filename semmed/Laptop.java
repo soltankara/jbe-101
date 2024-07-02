@@ -5,7 +5,7 @@ public class Laptop {
     String cpuName = "Intel 12800HX";
     double price = 3600.00;
     int slotPorts = 5;
-    boolean hasHDMIport = true;
+    boolean hasHdmiPort = true;
     float diagonalInInch = 17.3f;
 
 }
