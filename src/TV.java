@@ -1,3 +1,5 @@
+package src;
+
 public class TV {
     String brand = "Samsung";
     short screenSize = 55;

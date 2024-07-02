@@ -1,3 +1,5 @@
+package src;
+
 public class Table {
     String material = "marble";
     int numLegs = 4;

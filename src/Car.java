@@ -1,3 +1,5 @@
+package src;
+
 public class Car {
     String brand = "BMW";
     String model = "520";

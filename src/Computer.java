@@ -1,3 +1,5 @@
+package src;
+
 public class Computer {
     String brand = "Asus";
     String processor = "Intel i7";

@@ -1,3 +1,5 @@
+package src;
+
 public class Book {
     String title = "1984";
     String author = "George Orwell";

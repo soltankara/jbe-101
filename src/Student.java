@@ -1,3 +1,5 @@
+package src;
+
 public class Student {
     String firstName = "Adil";
     String lastName = "İsmayılov";
