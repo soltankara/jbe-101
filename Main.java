@@ -13,7 +13,7 @@ public class Main {
         int numberofPage=200;
         double widthoftheBook= 10.5;
         boolean hasPage=true;
-        byte numberofFaces=2;
+        byte numberOfFaces=2;
         long price2=9000l;
         float thelengthofBook=40.6f;
         String name5="book";
