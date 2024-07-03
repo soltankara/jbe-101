@@ -16,7 +16,7 @@ public class Task4 {
         System.out.printf("%d is equal to %d: %b%n", num1, num2, equal);
         System.out.printf("%d is not equal to %d: %b%n", num1, num2, notEqual);
         System.out.printf("%d is greater than %d: %b%n", num1, num2, greaterThan);
-        System.out.printf("%d is less than %d: %b%n", num1, num2, lessOrEqual);
+        System.out.printf("%d is less than %d: %b%n", num1, num2, lessThan);
         System.out.printf("%d is greater than or equal to %d: %b%n", num1, num2, greaterOrEqual);
         System.out.printf("%d is less than or equal to %d: %b%n", num1, num2, lessOrEqual);
     }
