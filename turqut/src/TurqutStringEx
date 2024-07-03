@@ -1,0 +1,12 @@
+In Java, the == operator checks for reference equality, meaning it checks if the two variables point to the same memory location.
+
+str1 == str2
+
+Both str1 and str2 are string literals initialized to "Hello". In Java, string literals are interned. This means that if two string literals have the same value, they will point to the same object in memory.
+Therefore, str1 and str2 both point to the same memory location where the string "Hello" is stored. Thus, str1 == str2 evaluates to true.
+
+
+str1 == str3
+
+str3 is created using the new keyword, which explicitly creates a new String object in memory. This means str3 points to a different memory location than str1, even though both strings have the same content.
+Therefore, str1 == str3 evaluates to false because they are not the same object in memory.
