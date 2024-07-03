@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9d6bd64-5e06-4fba-a536-d4f48c42db73" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/aysel/src/AyselOperatorsHw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aysel/src/AyselScannerHw1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aysel/src/AyselScannerHw2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aysel/src/AyselStringHw.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turqut/src/TurqutOperatorsHw.java" beforeDir="false" afterPath="$PROJECT_DIR$/turqut/src/TurqutOperatorsHw.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turqut/src/TurqutScHw1.java" beforeDir="false" afterPath="$PROJECT_DIR$/turqut/src/TurqutScHw1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turqut/src/TurqutScHw2.java" beforeDir="false" afterPath="$PROJECT_DIR$/turqut/src/TurqutScHw2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +26,26 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Aysel63&quot;
+  }
+}</component>
   <component name="GitRewordedCommitMessages">
     <option name="onto" value="2965ac0c411a17752f83a76fd1eb66dc0ab80bab" />
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/soltankara/jbe-101.git&quot;,
+    &quot;accountId&quot;: &quot;c410fa7a-b4e1-4883-88ca-dcdca2acad0d&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -48,6 +61,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AyselOperatorsHw.executor": "Run",
+    "Application.AyselScannerHw1.executor": "Run",
+    "Application.AyselScannerHw2.executor": "Run",
+    "Application.AyselStringHw.executor": "Run",
     "Application.Main (1).executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -55,7 +72,7 @@
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "turqut-hw-2",
+    "git-widget-placeholder": "AyselHomeW2",
     "go.import.settings.migrated": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Workspace/guavapay-dbs/ms-card",
@@ -68,7 +85,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.AyselOperatorsHw">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="jbe-101" />
       <working_directory value="$PROJECT_DIR$" />
@@ -88,6 +105,34 @@
       <framework value="gotest" />
       <method v="2" />
     </configuration>
+    <configuration name="AyselOperatorsHw" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AyselOperatorsHw" />
+      <module name="aysel" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AyselScannerHw1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AyselScannerHw1" />
+      <module name="aysel" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AyselScannerHw2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AyselScannerHw2" />
+      <module name="aysel" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AyselStringHw" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AyselStringHw" />
+      <module name="aysel" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="leyla" />
@@ -95,26 +140,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="jbe-101" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AyselOperatorsHw" />
+        <item itemvalue="Application.AyselScannerHw2" />
+        <item itemvalue="Application.AyselScannerHw1" />
+        <item itemvalue="Application.AyselStringHw" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -145,6 +179,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge pull request #31 from soltankara/turqut-hw-2&#10;&#10;Homework2" />
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
