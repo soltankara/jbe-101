@@ -15,13 +15,12 @@ public class Homework1
         int index = Integer.parseInt(scanner.nextLine());
 
         System.out.print("Enter the character: ");
-        String character = scanner.nextLine();
+        char character = scanner.nextLine().charAt(0);
 
         //Extracting variables
         String firstHalf = text.substring(0, index);
-        String secondHalf = text.substring(index);
-        String replacingCharacterInString = String.valueOf(text.charAt(index));
+        String secondHalf = text.substring(index+1);
 
-        System.out.println(secondHalf.replaceFirst(replacingCharacterInString, character));
+        System.out.println(firstHalf + character + secondHalf);
     }
 }
