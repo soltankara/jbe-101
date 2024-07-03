@@ -10,7 +10,7 @@ public class Homework2 {
         String text = scanner.nextLine();
 
         System.out.print("Enter the character to see its index: ");
-        String character = scanner.nextLine();
+        char character = scanner.nextLine().charAt(0);
 
         System.out.println(text.indexOf(character));
     }

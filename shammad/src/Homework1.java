@@ -1,10 +1,8 @@
 import java.util.Scanner;
 
 //HomeWork 1
-public class Homework1
-{
-    public static void main(String[] args)
-    {
+public class Homework1 {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         //Taking inputs
@@ -19,7 +17,7 @@ public class Homework1
 
         //Extracting variables
         String firstHalf = text.substring(0, index);
-        String secondHalf = text.substring(index+1);
+        String secondHalf = text.substring(index + 1);
 
         System.out.println(firstHalf + character + secondHalf);
     }
