@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class TurqutOperatorsHw {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -22,7 +23,7 @@ public class TurqutOperatorsHw {
         int number2 = sc.nextInt();
 
         boolean exp1 = (number1 == number2);
-        boolean exp2 = (number1!= number2);
+        boolean exp2 = (number1 != number2);
         boolean exp3 = (number1 > number2);
         boolean exp4 = (number1 < number2);
         boolean exp5 = (number1 >= number2);

@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class TurqutScHw1 {
     public static void main(String[] args) {
 
@@ -13,7 +14,7 @@ public class TurqutScHw1 {
         System.out.print("Enter character you want to replace with : ");
         char replaceChar = sc.next().charAt(0);
 
-        String replacedText = text.substring(0,index) + replaceChar + text.substring(index+1);
+        String replacedText = text.substring(0, index) + replaceChar + text.substring(index + 1);
 
         System.out.println(replacedText);
 
