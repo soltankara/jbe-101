@@ -1,0 +1,28 @@
+String str1 = "Hello";
+String str2 = "Hello";
+String str3 = new String("Hello");
+
+System.out.println(str1==str2); //true
+System.out.println(str1==str3); //false
+
+Why?
+----------------------------------------------------
+Simple answer: They do not point to the same string.
+
+Extended answer: Strings are immutable and when they are being initialized, they are being added to String Pool.
+                 When two same text is being created without "new" keyword, program points them to the same String.
+                 If we explicitly use "new" keyword, program creates another string for that.
+
+
+
+   String Pool and pointings:
+
+                 str1 --- > Hello
+                             ^
+                            /
+                          /
+                        /
+                 str2 /
+
+
+                 str3 --- > Hello
