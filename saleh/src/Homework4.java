@@ -36,6 +36,7 @@ public class Homework4 {
                     System.out.println(num1 % num2);
                 else
                     System.out.println("Error: Modulus by zero is not allowed.");
+                break;
             default:
                 System.out.println("Invalid choice.");
         }
