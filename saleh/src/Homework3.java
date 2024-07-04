@@ -26,6 +26,6 @@ public class Homework3 {
         if (num1 <= num2)
             System.out.println(num1 + " is less than or equal to " + num2);
 
-        sc.close();
+
     }
 }
