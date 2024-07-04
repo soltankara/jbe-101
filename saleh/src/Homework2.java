@@ -13,7 +13,6 @@ public class Homework2 {
         } else {
             System.out.println("'" + inputChar + "' not found in the text '" + text + "'");
         }
-        sc.close();
     }
 
     public static int findCharIndex(String text, char c) {
