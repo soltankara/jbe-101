@@ -1,0 +1,16 @@
+public class Stringmethod {
+    public static void main(String[] args) {
+        int eighty = 80;
+        int fourty = 40;
+        System.out.println(80+40);
+        System.out.println(80-40);
+        System.out.println(80*40);
+        System.out.println(80/40);
+        
+        // >, <, >=, <=, ==, !=
+        System.out.println(80 > 40);//true
+        System.out.println(80 < 40);//false
+        System.out.println(80 >= 40);//true
+        System.out.println(80 <= 40);//false
+        System.out.println(80 == 40);//false
+        System.out.println(80 != 40);//true
