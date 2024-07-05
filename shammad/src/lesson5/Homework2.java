@@ -12,7 +12,7 @@ public class Homework2 {
         int number = scanner.nextInt();
         if (number < 0)
             System.out.println("Please enter a valid, positive number.");
-        else if (number==0 || number == 1)
+        else if (number == 0 || number == 1)
             System.out.println("No prime numbers.");
         else {
             //this for loop is for checking numbers till the input number.

@@ -10,7 +10,7 @@ public class Homework3 {
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
 
-        System.out.println(number==0? "0 is neither positive nor negative.": (number>0? "Positive" : "Negative"));
+        System.out.println(number == 0 ? "0 is neither positive nor negative." : (number > 0 ? "Positive" : "Negative"));
 
         //Exercise2
         System.out.print("Enter 'a': ");
@@ -35,13 +35,13 @@ public class Homework3 {
 
         //Exercise3
         System.out.print("Input the 1st number: ");
-        int firstNum= scanner.nextInt();
+        int firstNum = scanner.nextInt();
 
         System.out.print("Input the 2nd number: ");
-        int secondNum= scanner.nextInt();
+        int secondNum = scanner.nextInt();
 
         System.out.print("Input the 3rd number: ");
-        int thirdNum= scanner.nextInt();
+        int thirdNum = scanner.nextInt();
 
         System.out.println(Math.max(firstNum, Math.max(secondNum, thirdNum)));
 
@@ -50,12 +50,12 @@ public class Homework3 {
         double floatNumber = scanner.nextDouble();
 
 
-        System.out.println(number==0.0? "Zero": (number>0.0? "Positive" : "Negative"));
+        System.out.println(number == 0.0 ? "Zero" : (number > 0.0 ? "Positive" : "Negative"));
 
         double absOfNumber = Math.abs(floatNumber);
         if (absOfNumber < 1)
             System.out.println("Small");
-        else if (absOfNumber>1000000)
+        else if (absOfNumber > 1000000)
             System.out.println("Large");
 
         //Exercise7
@@ -128,11 +128,11 @@ public class Homework3 {
 
         System.out.println("Input the 5 numbers :");
         for (int i = 0; i < 5; i++) {
-            sum+= scanner.nextInt();
+            sum += scanner.nextInt();
         }
 
         System.out.println("The sum of 5 numbers is: " + sum);
-        System.out.println("The average is: " + (sum/5.0));
+        System.out.println("The average is: " + (sum / 5.0));
 
         //Exercise 16
         System.out.print("Input number of rows: ");
@@ -140,7 +140,7 @@ public class Homework3 {
 
         for (int i = 1; i <= row; i++) {
             for (int j = 1; j <= i; j++) {
-                System.out.print(j+" ");
+                System.out.print(j + " ");
             }
             System.out.println();
         }
