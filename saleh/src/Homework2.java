@@ -2,25 +2,30 @@ import java.util.Scanner;
 
 public class Homework2 {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
+
         System.out.print("Enter a text: ");
         String text = sc.nextLine();
-        System.out.print("Enter char you want to see index: ");
-        char inputChar = sc.next().charAt(0);
-        int index = findCharIndex(text, inputChar);
-        if (index != -1) {
-            System.out.println("Index of '" + inputChar + "' in the text '" + text + "' is: " + index);
-        } else {
-            System.out.println("'" + inputChar + "' not found in the text '" + text + "'");
-        }
-    }
 
-    public static int findCharIndex(String text, char c) {
+        System.out.print("Enter char you want to see index: ");
+        String input = sc.nextLine();
+
+        char charToFind = input.charAt(0);
+
+        int index = -1;
         for (int i = 0; i < text.length(); i++) {
-            if (text.charAt(i) == c) {
-                return i;
+            if (text.charAt(i) == charToFind) {
+                index = i;
+                break;
             }
         }
-        return -1;
+
+        if (index != -1) {
+            System.out.printf("Index of '%c' in '%s' is: %d\n", charToFind, text, index);
+        } else {
+            System.out.printf("Character '%c' not found in '%s'\n", charToFind, text);
+        }
+
     }
 }
