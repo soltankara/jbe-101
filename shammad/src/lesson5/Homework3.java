@@ -9,7 +9,7 @@ public class Homework3 {
         //Exercise1
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
-        scanner.nextLine();
+
         System.out.println(number==0? "0 is neither positive nor negative.": (number>0? "Positive" : "Negative"));
 
         //Exercise2
@@ -36,19 +36,19 @@ public class Homework3 {
         //Exercise3
         System.out.print("Input the 1st number: ");
         int firstNum= scanner.nextInt();
-        scanner.nextLine();
+
         System.out.print("Input the 2nd number: ");
         int secondNum= scanner.nextInt();
-        scanner.nextLine();
+
         System.out.print("Input the 3rd number: ");
         int thirdNum= scanner.nextInt();
-        scanner.nextLine();
+
         System.out.println(Math.max(firstNum, Math.max(secondNum, thirdNum)));
 
         //Exercise4
         System.out.print("Input a number: ");
         double floatNumber = scanner.nextDouble();
-        scanner.nextLine();
+
 
         System.out.println(number==0.0? "Zero": (number>0.0? "Positive" : "Negative"));
 
@@ -137,7 +137,6 @@ public class Homework3 {
         //Exercise 16
         System.out.print("Input number of rows: ");
         int row = scanner.nextInt();
-        scanner.nextLine();
 
         for (int i = 1; i <= row; i++) {
             for (int j = 1; j <= i; j++) {
