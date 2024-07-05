@@ -5,13 +5,15 @@ public class HomeWork1 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a text: ");
-        String name = scanner.nextLine();
+        String text = scanner.nextLine();
 
         System.out.print("Enter index you want to replace: ");
-        int age = scanner.nextInt();
+        int index = scanner.nextInt();
         scanner.nextLine();
 
         System.out.print("Enter character you want to replace with: ");
-        String city = scanner.nextLine();
+        char character = scanner.next().charAt(index);
+        System.out.println(text.replace(text.charAt(index), character));
+
     }
 }
