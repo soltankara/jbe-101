@@ -1,0 +1,4 @@
+First we create str1 with "Hello" value. Then we create second object str2 with "Hello" value. str1
+and str2 reference to same value in heap. That is why when we compare them we get true. But, str3 created
+by using new keyword. It means java will create new value though we already have this value in heap. So
+str1 and str3 don't reference to same value.
