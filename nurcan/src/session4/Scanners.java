@@ -1,6 +1,9 @@
+package session4;
+
 import java.util.Scanner;
 
-public class Scanner {
+public class Scanners {
+
     public static void main(String[] args) {
         //Scanner homework 1
         Scanner scan = new Scanner(System.in);
