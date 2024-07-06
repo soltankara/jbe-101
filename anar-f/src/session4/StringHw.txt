@@ -1,0 +1,6 @@
+When we input two string literals, we can use "==" operator to compare them
+and see if they are equal or not and with this way we compare the memory address
+of them and both takes same references,but when we create instance using the
+"new" keyword we basically create an object which stores in the heap memory so
+that it can`t be compared with string literals even though if the given strings
+are equal in the literal way.
