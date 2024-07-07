@@ -112,8 +112,10 @@ public class Lesson5task3 {
         double n1 = sc.nextDouble();
         System.out.print("Input floating-point another number : ");
         double n2 = sc.nextDouble();
-        n1 = Math.round(n1 * 1000); n1 /= 1000;
-        n2 = Math.round(n2 * 1000); n2 /= 1000;
+        n1 = Math.round(n1 * 1000);
+        n1 /= 1000;
+        n2 = Math.round(n2 * 1000);
+        n2 /= 1000;
 
         if (n1 == n2) {
             System.out.println("They are same");
@@ -208,8 +210,16 @@ public class Lesson5task3 {
         System.out.print("Input the year : ");
         int y = sc.nextInt();
 
-        if ((y % 4 == 0 && y % 100 != 0) || y % 400 == 0) {
-            System.out.println(y + " is a leap year");
+        if (y % 4 == 0) {
+            if (y % 100 == 0) {
+                if (y % 400 == 0) {
+                    System.out.println(y + " is a leap year");
+                } else {
+                    System.out.println(y + " is not a leap year");
+                }
+            } else {
+                System.out.println(y + " is a leap year");
+            }
         } else {
             System.out.println(y + " is not a leap year");
         }
