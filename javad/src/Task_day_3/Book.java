@@ -9,7 +9,7 @@ public class Book {
          int publishingYear = 2024;
          int pageCount = 643;     // Sehife sayi
          String isbn = "1902312912353"; // ISBN nomresi
-         long priceQEPIK = 1_100L;        // Qiymet (qepikle)
+         long priceQpk = 1_100L;        // Qiymet (qepikle)
          boolean available = true; // Movcut olup olmadığı;
       //----------------------------------------------//
         System.out.println("Book title :"+ title);
