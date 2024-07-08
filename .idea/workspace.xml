@@ -5,21 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9d6bd64-5e06-4fba-a536-d4f48c42db73" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/depo/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/depo/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/depo/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/depo/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/depo/TV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/depo/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session3/Homework1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session3/Homework2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session4/HomeWork2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session4/HomeWork3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session4/homework1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session5/StringBuilderAndBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/main/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session3/Homework1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session3/Homework2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session4/HomeWork2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session4/HomeWork3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session4/homework1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session5/StringBuilderAndBuffer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bahruz/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bahruz/src/az/perfect/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +85,7 @@
       <recent name="C:\Users\Behruz Tapdiqov\Documents\java21\jbe-101\bahruz\src\az\perfect\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Homework2">
+  <component name="RunManager" selected="Application.az.perfect.main.Main">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="jbe-101" />
       <working_directory value="$PROJECT_DIR$" />
@@ -138,20 +133,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="jbe-101" />
+    <configuration name="az.perfect.main.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="az.perfect.main.Main" />
+      <module name="bahruz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.perfect.main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.az.perfect.main.Main" />
         <item itemvalue="Application.Homework2" />
         <item itemvalue="Application.Homework1" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -169,7 +170,8 @@
       <workItem from="1719946297323" duration="2331000" />
       <workItem from="1719983043712" duration="310000" />
       <workItem from="1720101895405" duration="770000" />
-      <workItem from="1720102784848" duration="829000" />
+      <workItem from="1720102784848" duration="7265000" />
+      <workItem from="1720421500997" duration="2309000" />
     </task>
     <servers />
   </component>
