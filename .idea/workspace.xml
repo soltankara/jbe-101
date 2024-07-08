@@ -5,16 +5,100 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9d6bd64-5e06-4fba-a536-d4f48c42db73" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session5/StringBuilderAndBuffer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/main/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session3/Homework1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session3/Homework2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session4/HomeWork2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session4/HomeWork3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session4/homework1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session5/StringBuilderAndBuffer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson05/Operators1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson05/Operators2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson05/ScannerHW1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson05/ScannerHW2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson05/StringHW" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/ClassWorks/CWLoops.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/ClassWorks/CWSwitchCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW3/Ex1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW3/Ex12.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW3/Ex14.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW3/Ex16.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW3/Ex18.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW3/Ex19.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW3/Ex2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW3/Ex3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW3/Ex6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW3/Ex7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW3/Ex8.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adil/src/lesson06/HomeWorks/HW3/Ex9.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aysel/src/session5/HomeWork1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aysel/src/session5/HomeWork2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aysel/src/session5/HomeWorkW3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ayten/primehw2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ayten/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ayten/src/primehw2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ayten/src/whileloophw1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ayten/whileloophw1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coshqun/postive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/coshqun/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elshan/src/S5/ElshanS5HW1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/elshan/src/S5/ElshanS5HW2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyla/src/src/ConditionalStatements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyla/src/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyla/src/src/PalindromeChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/leyla/src/src/Prime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maharram/src/Homew.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maharram/src/Homewoper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maharram/src/Main1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nurcan/src/session4/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nurcan/src/session4/Operators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nurcan/src/session4/Scanners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nurcan/src/session5/Palindrome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nurcan/src/session5/Prime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nurcan/src/session5/ifConditional.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/omar/src/strings difference" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shammad/src/lesson4/Homework1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shammad/src/lesson4/Homework2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shammad/src/lesson4/Homework3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shammad/src/session6coursework/CourseWork1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shammad/src/session6coursework/CourseWork2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shammad/src/session6coursework/CourseWork3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shammad/src/session6coursework/CourseWork4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turqut/src/Lesson5task1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turqut/src/Lesson5task2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/turqut/src/Lesson5task3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jbe-101.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bahruz/src/az/perfect/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adil/adil.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ali/ali.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anar-f/anar-f.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anar-k/anar-k.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/araz/araz.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/aysel/aysel.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bahruz/bahruz.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bahruz/src/az/perfect/session5/StringBuilderAndBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session5/StringBuilderAndBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elshan/elshan.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/huseyn/huseyn.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javad/javad.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kanan/kanan.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/leyla/leyla.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maharram/maharram.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/muhammed/muhammed.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nurcan/nurcan.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/omar/omar.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shammad/Homework1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shammad/Homework2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shammad/Homework3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shammad/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/shammad/StringHomework.txt" beforeDir="false" afterPath="$PROJECT_DIR$/shammad/src/lesson3/StringHomework.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/royal/royal.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saleh/saleh.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shammad/shammad.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/shammad/src/Homework1.java" beforeDir="false" afterPath="$PROJECT_DIR$/shammad/src/lesson3/Homework1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shammad/src/Homework2.java" beforeDir="false" afterPath="$PROJECT_DIR$/shammad/src/lesson3/Homework2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shammad/src/Homework3.java" beforeDir="false" afterPath="$PROJECT_DIR$/shammad/src/lesson3/Homework3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turqut/turqut.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +255,10 @@
       <workItem from="1719983043712" duration="310000" />
       <workItem from="1720101895405" duration="770000" />
       <workItem from="1720102784848" duration="7265000" />
-      <workItem from="1720421500997" duration="2628000" />
+      <workItem from="1720421500997" duration="3079000" />
+      <workItem from="1720426234255" duration="1000" />
+      <workItem from="1720426238303" duration="54000" />
+      <workItem from="1720426295083" duration="14000" />
     </task>
     <servers />
   </component>

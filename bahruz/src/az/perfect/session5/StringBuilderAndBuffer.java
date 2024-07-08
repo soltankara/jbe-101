@@ -3,6 +3,9 @@ package az.perfect.session5;
 public class StringBuilderAndBuffer {
 
     public static void main(String[] args) {
+
+
+
         StringBuffer st=new StringBuffer("Hello ");
         st.append(" World");
 
