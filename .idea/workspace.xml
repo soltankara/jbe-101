@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="863ec9f0-3830-4c59-ad1d-1a87c9efa89b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/main/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session3/Homework1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session3/Homework2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session4/HomeWork2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session4/HomeWork3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session4/homework1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bahruz/src/az/perfect/session5/StringBuilderAndBuffer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/main/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session3/Homework1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session3/Homework2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session4/HomeWork2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session4/HomeWork3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session4/homework1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/bahruz/az/perfect/session5/StringBuilderAndBuffer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bahruz/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/bahruz/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2ixhagn8olUsQKVEQdRgPXTGaqU" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.Exercise4">
+    <configuration name="Exercise1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="az.perfect.truing.homework3.Exercise1" />
+      <module name="bahruz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.perfect.truing.homework3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="az.perfect.truing.homework3.Exercise2" />
+      <module name="bahruz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.perfect.truing.homework3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="az.perfect.truing.homework3.Exercise3" />
+      <module name="bahruz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.perfect.truing.homework3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exercise4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="az.perfect.truing.homework3.Exercise4" />
+      <module name="bahruz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.perfect.truing.homework3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomeWork5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="az.perfect.truing.session5.HomeWork5" />
+      <module name="bahruz" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="az.perfect.truing.session5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Exercise4" />
+        <item itemvalue="Application.Exercise3" />
+        <item itemvalue="Application.Exercise2" />
+        <item itemvalue="Application.Exercise1" />
+        <item itemvalue="Application.HomeWork5" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="863ec9f0-3830-4c59-ad1d-1a87c9efa89b" name="Changes" comment="" />
+      <created>1720438203480</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720438203480</updated>
+      <workItem from="1720438205677" duration="5908000" />
+      <workItem from="1720444215043" duration="70000" />
+      <workItem from="1720444467239" duration="667000" />
+      <workItem from="1720520991751" duration="5396000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
