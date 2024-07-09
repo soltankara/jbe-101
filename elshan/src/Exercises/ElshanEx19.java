@@ -1,4 +1,4 @@
-package Exercises.src;
+package Exercises;
 
 public class ElshanEx19 {
     public static void main(String[] args) {

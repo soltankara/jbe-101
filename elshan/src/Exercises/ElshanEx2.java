@@ -1,4 +1,4 @@
-package Exercises.src;
+package Exercises;
 
 import java.util.Scanner;
 //2. Write a Java program to solve quadratic equations (use if, else if and else).

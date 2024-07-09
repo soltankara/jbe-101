@@ -1,4 +1,4 @@
-package Exercises.src;
+package Exercises;
 
 import java.util.Scanner;
 //13. Write a Java program to display the cube of the given number up to an integer.

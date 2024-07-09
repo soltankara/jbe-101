@@ -1,4 +1,4 @@
-package Exercises.src;
+package Exercises;
 
 import java.util.Scanner;
 //14. Write a Java program to display the multiplication table of a given integer.
