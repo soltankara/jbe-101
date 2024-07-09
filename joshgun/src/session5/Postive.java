@@ -1,6 +1,8 @@
+package session5;
+
 import java.util.Scanner;
 
-public class postive {
+public class Postive {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
