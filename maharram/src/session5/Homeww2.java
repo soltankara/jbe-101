@@ -18,15 +18,9 @@ public class Homeww2 {
                     System.out.print(i + "  ");
 
                 }
-
-
             }
-
         }
-
     }
-
-
     public static boolean primenumber(int num) {
         if (num <= 1) {
             return false;
@@ -37,9 +31,5 @@ public class Homeww2 {
             }
         }
         return true;
-
-
     }
-
-
 }

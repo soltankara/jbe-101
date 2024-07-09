@@ -18,7 +18,5 @@ public class Homeww1 {
         }
         sc.close();
 
-
     }
-
 }

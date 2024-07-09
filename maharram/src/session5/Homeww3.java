@@ -24,9 +24,6 @@ public class Homeww3 {
         }else if (number<0){
             System.out.println("number is negative ");
         }
-
-
-
     }
 }
 
