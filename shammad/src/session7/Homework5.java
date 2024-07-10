@@ -11,9 +11,11 @@ public class Homework5 {
         int spesificPosition = 3;
 
         for (int i = 0; i < arr.length; i++) {
-            if (i != (spesificPosition - 1))
-                newArr[i] = arr[i];
-            newArr[spesificPosition - 1] = 233;
+            if (i == (spesificPosition - 1)) {
+                newArr[spesificPosition - 1] = 233;
+                continue;
+            }
+            newArr[i] = arr[i];
         }
         System.out.println(Arrays.toString(newArr));
     }

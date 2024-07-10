@@ -11,6 +11,7 @@ public class Homework3 {
             if (arr3[i] == numberToSearch) {
                 found = true;
                 System.out.println("Index of searched element is: " + i);
+                break;
             }
         }
         if (!found)
