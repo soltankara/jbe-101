@@ -1,4 +1,4 @@
-
+package session4;
 //Scanner homework 1
 
 import java.util.Scanner;
