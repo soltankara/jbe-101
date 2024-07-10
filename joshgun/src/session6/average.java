@@ -3,7 +3,7 @@ package session6;
 import java.util.Scanner;
 
 // 4 - Write a Java program to calculate the average value of array elements.
-public class average {
+public class Average {
     public static void main(String[] args){
 //        int[] array = {2, 4, 6, 8, 10};
 //        int sum=0;
