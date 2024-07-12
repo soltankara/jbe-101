@@ -1,20 +1,7 @@
 package lesson08.HomeWorks;
 
-public class Ex23 {
+public class Ex23To30 {
     public static void main(String[] args) {
-        int arr1[] = {2, 4, 8};
-        int arr2[] = {2, 0, 4, 0, 8, 0, 16};
-        int arr3[] = {4, 8, 14, 40};
-        int[] array_nums = {50, 77, 12, 54, -11};
-//        System.out.println(isEqual(arr1, arr2));
-//        System.out.println(missingNumber(arr3));
-//        commonElements(arr1, arr2, arr3);
-//        zerosToTheEndOfArray(arr2);
-//        for (int i : arr2) {
-//            System.out.print(i);
-//        }
-        System.out.println(withoutTwoNumbers(array_nums, 0, -1));
-
     }
 
     public static boolean isEqual(int[] arr1, int[] arr2) {
@@ -28,16 +15,12 @@ public class Ex23 {
 
     public static int missingNumber(int[] arr) {
         //24. Write a Java program to find a missing number in an array.
-        int min = arr[0];
-        int max = arr[0];
         int sumArr = 0;
         for (int i : arr) {
-            if (min > i) min = i;
-            else if (max < i) max = i;
             sumArr += i;
         }
         int sum = 0;
-        for (int i = min; i <= max; i++) {
+        for (int i = arr[0]; i <= arr[arr.length - 1]; i++) {
             sum += i;
         }
         return sum - sumArr;
@@ -73,8 +56,9 @@ public class Ex23 {
     }
 
     public static boolean withoutTwoNumbers(int[] arr, int a, int b) {
+        //30. Write a Java program to check if an array of integers is without 0 and -1.
         for (int i : arr) {
-            if(i == a || i == b) return false;
+            if (i == a || i == b) return false;
         }
         return true;
     }
