@@ -9,12 +9,12 @@ public class task11 {
         int number = sc.nextInt();
         System.out.print("The first n natural numbers are :");
         int sum = 0;
-        for (int i=1;i<=number;i++){
-            System.out.print(" "+i);
-            sum+=i;
+        for (int i = 1; i <= number; i++) {
+            System.out.print(" " + i);
+            sum += i;
         }
         System.out.println();
-        System.out.println("The sum of natural numbers : "+ sum);
+        System.out.println("The sum of natural numbers : " + sum);
 
 
     }

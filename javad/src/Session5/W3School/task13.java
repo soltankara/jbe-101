@@ -8,8 +8,8 @@ public class task13 {
         System.out.print("Enter number : ");
         int number = sc.nextInt();
         System.out.println("-------------------------------");
-        for (int i=1;i<=number;i++){
-            System.out.println("Number is : "+i+" and cube of "+i+" is : "+(int)Math.pow(i,3));
+        for (int i = 1; i <= number; i++) {
+            System.out.println("Number is : " + i + " and cube of " + i + " is : " + (int) Math.pow(i, 3));
         }
     }
 }

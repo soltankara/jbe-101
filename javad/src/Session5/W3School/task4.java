@@ -14,8 +14,7 @@ public class task4 {
         } else {
             if (number < 1) {
                 System.out.println(number + " is small positive");
-            }
-            else if (number > 1_000_000) {
+            } else if (number > 1_000_000) {
                 System.out.println(number + " is large positive");
             } else {
                 System.out.println(number + " is positive");

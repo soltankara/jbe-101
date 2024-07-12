@@ -7,7 +7,7 @@ public class task5 {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter day : ");
         int weekDay = sc.nextInt();
-        switch (weekDay){
+        switch (weekDay) {
             case 1 -> System.out.println("it's Monday");
             case 2 -> System.out.println("it's Tuesday");
             case 3 -> System.out.println("it's Wednesday");
