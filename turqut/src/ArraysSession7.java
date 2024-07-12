@@ -176,17 +176,26 @@ public class ArraysSession7 {
 
         //Task 16 - Write a Java program to remove duplicate elements from an array.
         int[] arr16 = {1, 2, 3, 4, 5, 2, 3, 4};
-        List<Integer> list1 = new ArrayList<>();
-        for (int num : arr16) {
-            if (!list1.contains(num)) {
-                list1.add(num);
+        System.out.println("Original array: " + Arrays.toString(arr16));
+        int size = arr16.length;
+        int[] temp = new int[size];
+        int newSize = 0;
+        for (int i = 0; i < size; i++) {
+            boolean isDuplicate = false;
+            for (int j = 0; j < newSize; j++) {
+                if (arr16[i] == temp[j]) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+            if (!isDuplicate) {
+                temp[newSize++] = arr16[i];
             }
         }
-        int[] newArr4 = new int[list1.size()];
-        for (int i = 0; i < list1.size(); i++) {
-            newArr4[i] = list1.get(i);
+        int[] newArr4 = new int[newSize];
+        for (int i = 0; i < newSize; i++) {
+            newArr4[i] = temp[i];
         }
-        System.out.println("Original array: " + Arrays.toString(arr16));
         System.out.println("Array after removing duplicates: " + Arrays.toString(newArr4));
 
         //Task 17 - Write a Java program to find the second-largest element in an array.
