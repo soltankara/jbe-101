@@ -35,16 +35,15 @@ public class Homework2 {
         String text = sc.nextLine();
 
         System.out.print("Enter char you want to see index: ");
-        String input = sc.nextLine();
 
-        char charToFind = input.charAt(0);
+        char input = sc.next().charAt(0);
 
-        int index = text.indexOf(charToFind);
+        int index = text.indexOf(input);
 
         if (index != -1) {
-            System.out.printf("Index of '%c' in '%s' is: %d\n", charToFind, text, index);
+            System.out.printf("Index of '%c' in '%s' is: %d\n", input, text, index);
         } else {
-            System.out.printf("Character '%c' not found in '%s'\n", charToFind, text);
+            System.out.printf("Character '%c' not found in '%s'\n", input, text);
         }
 
     }
