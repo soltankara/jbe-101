@@ -24,7 +24,7 @@ public class Hw2 {
             }
         }
 
-        int it = 0;
+
         for (int i = 2; i < number; i++) {
             boolean isPrime = true;
             for (int j = 2; j <= Math.sqrt(i); j++) {
