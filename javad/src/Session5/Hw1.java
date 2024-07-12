@@ -9,9 +9,8 @@ public class Hw1 {
         String text = sc.nextLine();
         String text2 = text.toLowerCase();
         StringBuilder newText = new StringBuilder(text2).reverse();
-        if(newText.toString().equals(text2))  System.out.println(text+ " is palindrome");
-        else System.out.println(text+ " is not palindrome");
-
+        if (newText.toString().equals(text2)) System.out.println(text + " is palindrome");
+        else System.out.println(text + " is not palindrome");
 
 
     }

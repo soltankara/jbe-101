@@ -33,12 +33,11 @@ public class Hw2 {
                     break;
                 }
             }
-            if(isPrime){
-                System.out.print(i+" ");
+            if (isPrime) {
+                System.out.print(i + " ");
             }
 
         }
-
 
 
     }
