@@ -10,11 +10,9 @@ public class ArrayQ5 {
         int firstIndex = sc.nextInt();
         System.out.print("Enter second index: ");
         int secondIndex = sc.nextInt();
-        for (int i = 0; i < arr.length; i++) {
-            int temp = arr[firstIndex];
-            arr[firstIndex] = arr[secondIndex];
-            arr[secondIndex] = temp;
-        }
+        int temp = arr[firstIndex];
+        arr[firstIndex] = arr[secondIndex];
+        arr[secondIndex] = temp;
         for (int i : arr) {
             System.out.print(i + " ");
         }
