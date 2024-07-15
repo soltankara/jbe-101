@@ -1,6 +1,10 @@
 package lesson08.HomeWorks;
 
-public class Ex23To30 {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Ex23To36 {
     public static void main(String[] args) {
     }
 
@@ -63,4 +67,47 @@ public class Ex23To30 {
         return true;
     }
 
+    public static List<Integer> consecutiveElements(int[] arr) {
+        //34. Write a Java program to find the length of the longest consecutive elements sequence from
+        // an unsorted array of integers.
+        Arrays.sort(arr);
+        List<List<Integer>> lists = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            List<Integer> list = new ArrayList<>();
+            list.add(arr[i]);
+            for (int j = i + 1; j < arr.length; j++) {
+                if (arr[j] == arr[j - 1] + 1) {
+                    list.add(arr[j]);
+                } else {
+                    lists.add(list);
+                    break;
+                }
+            }
+        }
+        int max_i = 0;
+        for (int i = 0; i < lists.size(); i++) {
+            if (lists.get(max_i).size() < lists.get(i).size()) max_i = i;
+        }
+        return lists.get(max_i);
+    }
+
+    public static List<List<Integer>> triplets(int[] arr, int sum) {
+        //36. Write a Java program to find all the distinct triplets such that the sum of all the three elements
+        // [x, y, z (x ≤ y ≤ z)] equal to a specified number.
+        List<List<Integer>> lists = new ArrayList<>();
+        for (int i = 0; i < arr.length - 2; i++) {
+            for (int i1 = i + 1; i1 < arr.length - 1; i1++) {
+                for (int i2 = i1 + 1; i2 < arr.length; i2++) {
+                    if (arr[i] + arr[i1] + arr[i2] == sum) {
+                        List<Integer> list = new ArrayList<>();
+                        list.add(arr[i]);
+                        list.add(arr[i1]);
+                        list.add(arr[i2]);
+                        lists.add(list);
+                    }
+                }
+            }
+        }
+        return lists;
+    }
 }
