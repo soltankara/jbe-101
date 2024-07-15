@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class Classwork1 {
     public static void main(String[] args) {
-
         System.out.println(sum(2, 4, 6, 8, 10));
     }
 
@@ -16,4 +15,3 @@ public class Classwork1 {
         return numbers[0] + sum(array);
     }
 }
-
