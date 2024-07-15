@@ -18,8 +18,8 @@ public class Exer32 {
                 break;
             }
         }
-        if(flag==false)  return false;
-        return true;
+        if(flag)  return true;
+        return false;
     }
 
 }
