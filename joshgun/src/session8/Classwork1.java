@@ -15,3 +15,4 @@ public class Classwork1 {
         return numbers[0] + sum(array);
     }
 }
+
