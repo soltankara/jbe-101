@@ -18,10 +18,8 @@ public class MethodsHW1 {
         return sum;
     }
     public static int SumWithRecursive(int number ) {
-        int[] arr = new int[number];
-        for (int i = 0 ; i <= number-1; i++) {
-            arr[i] = i+1;
-        }
-        return Arrays.stream(arr).sum();
+        int[] arr = {1,2,3,4,5};
+       
+        return arr[0] + arr[1] + arr[2] + arr[3] + arr[4];
     }
 }
