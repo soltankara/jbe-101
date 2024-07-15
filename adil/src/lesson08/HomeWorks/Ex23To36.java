@@ -70,25 +70,27 @@ public class Ex23To36 {
     public static List<Integer> consecutiveElements(int[] arr) {
         //34. Write a Java program to find the length of the longest consecutive elements sequence from
         // an unsorted array of integers.
-        Arrays.sort(arr);
         List<List<Integer>> lists = new ArrayList<>();
-        for (int i = 0; i < arr.length; i++) {
+        for (int a : arr) {
             List<Integer> list = new ArrayList<>();
-            list.add(arr[i]);
-            for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] == arr[j - 1] + 1) {
-                    list.add(arr[j]);
-                } else {
-                    lists.add(list);
-                    break;
-                }
+            list.add(a);
+            while (contains(arr, a + 1)) {
+                list.add(++a);
             }
+            lists.add(list);
         }
         int max_i = 0;
         for (int i = 0; i < lists.size(); i++) {
             if (lists.get(max_i).size() < lists.get(i).size()) max_i = i;
         }
         return lists.get(max_i);
+    }
+
+    public static boolean contains(int[] arr, int k) {
+        for (int i : arr) {
+            if (i == k) return true;
+        }
+        return false;
     }
 
     public static List<List<Integer>> triplets(int[] arr, int sum) {
