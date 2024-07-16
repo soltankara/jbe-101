@@ -1,8 +1,8 @@
 //14. Write a Java program to find common elements between two arrays (string values).
 package session6ArrayW3resource;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 public class Arrayexercise14 {
     public static void main(String[] args) {
@@ -23,20 +23,23 @@ public class Arrayexercise14 {
             array2[i] = sc.next();
         }
         System.out.println("second array :" + Arrays.toString(array2));
-        Set<String> commonelement = findcommonelement(array1, array2);
-        System.out.println("common element :" + commonelement);
-    }
-    public static Set<String> findcommonelement(String[] array1, String[] array2) {
-        Set<String> set1 = new HashSet<>();
-        Set<String> commonelements = new HashSet<>();
-        for (String element : array1) {
-            set1.add(element);
+        String[] commonElements = findCommonElement(array1, array2);
+        if (commonElements.length == 0) {
+            System.out.println("common element was not funded");
+        } else {
+            System.out.println("common elements :" + Arrays.toString(commonElements));
         }
-        for (String element : array2) {
-            if (set1.contains(element)) {
-                commonelements.add(element);
+    }
+    public static String[] findCommonElement(String[] arr1, String[] arr2) {
+        List<String> commonList = new ArrayList<>();
+        for (String i : arr1) {
+            for (String j : arr2) {
+                if (i.equals(j) && !commonList.contains(i)) {
+                    commonList.add(i);
+                    break;
+                }
             }
         }
-        return commonelements;
+        return commonList.toArray(new String[0]);
     }
 }

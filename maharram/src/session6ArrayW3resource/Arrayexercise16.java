@@ -1,10 +1,9 @@
 //16. Write a Java program to remove duplicate elements from an array.
 package session6ArrayW3resource;
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashSet;
+import java.util.List;
 import java.util.Scanner;
-import java.util.Set;
-
 public class Arrayexercise16 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -16,19 +15,21 @@ public class Arrayexercise16 {
             array[i] = sc.nextInt();
         }
         System.out.println("array  : " + Arrays.toString(array));
-        int[] newarray = removedublicate(array);
-        System.out.println("the array which without dublicate  :" + Arrays.toString(newarray));
+        int[] lastArray = removeDublicatElement(array);
+        System.out.println("last array :" + Arrays.toString(lastArray));
     }
-    public static int[] removedublicate(int[] arr) {
-        Set<Integer> set = new HashSet<>();
+    public static int[] removeDublicatElement(int arr[]) {
+        List<Integer> listWithoutDublicate = new ArrayList<>();
+
         for (int i : arr) {
-            set.add(i);
+            if (!listWithoutDublicate.contains(i)) {
+                listWithoutDublicate.add(i);
+            }
         }
-        int[] arraywithoutdublicate = new int[set.size()];
-        int index = 0;
-        for (Integer i : set) {
-            arraywithoutdublicate[index++] = i;
+        int[] arrayWithoutDublicate = new int[listWithoutDublicate.size()];
+        for (int i = 0; i < listWithoutDublicate.size(); i++) {
+            arrayWithoutDublicate[i] = listWithoutDublicate.get(i);
         }
-        return arraywithoutdublicate;
+        return arrayWithoutDublicate;
     }
 }

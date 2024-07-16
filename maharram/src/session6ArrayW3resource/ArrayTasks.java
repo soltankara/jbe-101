@@ -81,10 +81,10 @@ public class ArrayTasks {
             array7[i] = sc6.nextInt();
         }
         System.out.print("enter number for checking :");
-        int numbertocheck = sc6.nextInt();
+        int numberToCheck = sc6.nextInt();
         int index = -1;
         for (int i = 0; i < size6; i++) {
-            if (array7[i] == numbertocheck) {
+            if (array7[i] == numberToCheck) {
                 index = i;
             }
         }
@@ -160,22 +160,22 @@ public class ArrayTasks {
             System.out.print("element  " + (i + 1) + " : ");
             array9[i] = sc9.nextInt();
         }
-        int[] newarray9 = new int[size9 + 1];
+        int[] newArray9 = new int[size9 + 1];
         System.out.print("enter element which you want to insert : ");
-        int elementtoinsert = sc9.nextInt();
+        int elementToInsert = sc9.nextInt();
         System.out.print("which position do you want to insert  (enter index (index start from 0))  : ");
         int position = sc9.nextInt();
         for (int i = 0, j = 0; i < size9 + 1; i++) {
             if (i == position) {
-                newarray9[i] = elementtoinsert;
+                newArray9[i] = elementToInsert;
             } else {
-                newarray9[i] = array9[j++];
+                newArray9[i] = array9[j++];
             }
         }
         System.out.println("array9 is  :" + Arrays.toString(array9));
-        System.out.println("newarray9 is  :" + Arrays.toString(newarray9));
+        System.out.println("newarray9 is  :" + Arrays.toString(newArray9));
         //-----------------------------------------------------------------------------------------
-//        12. Write a Java program to find duplicate values in an array of integer values.
+        //  12. Write a Java program to find duplicate values in an array of integer values.
         Scanner sc12 = new Scanner(System.in);
         System.out.print("enter the size of array  :  ");
         int size0 = sc12.nextInt();
@@ -314,7 +314,3 @@ public class ArrayTasks {
         System.out.println("the array  :" + Arrays.toString(array21));
     }
 }
-
-
-
-
