@@ -37,3 +37,4 @@ public class ArrayExercise18 {
         return secondSmallestNumber;
     }
 }
+
