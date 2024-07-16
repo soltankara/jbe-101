@@ -1,0 +1,11 @@
+String a = "abc"; 
+String b = "abc";
+System.out.println(a == b);  // true
+ /////
+Bele olduqda her iki verilen eyni obyekte aid oldugu ucun true qaytaracaq
+/////
+String c = new String("abc");
+String d = new String("abc");
+System.out.println(c == d);  // false
+/////
+Bele olduqda ise String tipinde olan  muxtelif obyekt yaradilir bu zaman ayri-ayri obyektler oldugu ucun bu kod bize false qaytaracaq 
