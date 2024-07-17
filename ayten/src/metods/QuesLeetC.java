@@ -1,6 +1,6 @@
 package metods;
 
-public class Sumusingrecur {
+public class QuesLeetC {
     public static void main(String[] args) {
         int [][] arr={{2,3,4},{5,6,8},{9,7,1}};
         changingNiDegre(arr);

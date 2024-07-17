@@ -12,10 +12,10 @@ public class Practice {
 //    static int min(int num1,int num2,int num3){
 //        return Math.min(num3,Math.min(num1,num2));
 //    }
-    static  String reverseme(String s){
-        String reversede="";
-        for(int i=s.toCharArray().length-1;i>=0;i--){
-            reversede+=s.charAt(i);
+    static String reverseme(String s) {
+        String reversede = "";
+        for (int i = s.toCharArray().length - 1; i >= 0; i--) {
+            reversede += s.charAt(i);
         }
         return reversede;
     }
