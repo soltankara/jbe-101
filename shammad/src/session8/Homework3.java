@@ -6,7 +6,7 @@ public class Homework3 {
     }
 
     //LeetCode 7.Reverse Integer
-    static int reverse(int x) {
+    public static int reverse(int x) {
         try {
             StringBuilder sb = new StringBuilder(String.valueOf(x));
             String prefix = "";

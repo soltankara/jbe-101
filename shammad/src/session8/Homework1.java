@@ -9,7 +9,7 @@ public class Homework1 {
         System.out.println("Sum of numbers up to " + number + " using recursion is " + sumUsingRecursion);
     }
 
-    private static int sumUsingLoop(int number) {
+    public static int sumUsingLoop(int number) {
         int sum = 0;
         for (int i = 1; i <= number; i++) {
             sum += i;
@@ -17,7 +17,7 @@ public class Homework1 {
         return sum;
     }
 
-    private static int sumUsingRecursion(int number) {
+    public static int sumUsingRecursion(int number) {
         if (number == 1)
             return 1;
         else
