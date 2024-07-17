@@ -13,8 +13,8 @@ public class MethodsPracticeClassTest {
     }
     @Test
     public void whenCallingSum_ThenRetunResult() {
-        String result = Practice.reverseme("");
-        assertEquals("", result);
+        String res = Practice.reverseme("");
+        assertEquals("", res);
     }
 
 }
