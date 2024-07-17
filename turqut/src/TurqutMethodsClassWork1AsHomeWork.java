@@ -10,7 +10,7 @@ public class TurqutMethodsClassWork1AsHomeWork {
 
     }
 
-    private static int sumWithLoop(int number) {
+    public static int sumWithLoop(int number) {
         int sum = 0;
         for (int i = 1; i < number; i++) {
             sum += i;
@@ -18,7 +18,7 @@ public class TurqutMethodsClassWork1AsHomeWork {
         return sum;
     }
 
-    private static int sumWithRecursion(int number) {
+    public static int sumWithRecursion(int number) {
         if (number == 2) {
             return 1;
         } else {

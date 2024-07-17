@@ -69,11 +69,11 @@ public class TurqutMethodsHomeWork2Math {
         System.out.println(MathTask10(columnTitle));
     }
 
-    private static int MathTask1(int num1, int num2) {
+    public static int MathTask1(int num1, int num2) {
         return num1 + num2;
     }
 
-    private static int MathTask2(int n) {
+    public static int MathTask2(int n) {
         int sum = 0;
         int product = 1;
         while (n != 0) {
@@ -85,7 +85,7 @@ public class TurqutMethodsHomeWork2Math {
         return product - sum;
     }
 
-    private static int MathTask3(int num3) {
+    public static int MathTask3(int num3) {
         int count = 0;
         int temp = num3;
         while (num3 > 0) {
@@ -98,7 +98,7 @@ public class TurqutMethodsHomeWork2Math {
         return count;
     }
 
-    private static int MathTask4(int low, int high) {
+    public static int MathTask4(int low, int high) {
         int count = 0;
         for (int i = low; i <= high; i++) {
             int digits = countDigits(i);
@@ -113,17 +113,17 @@ public class TurqutMethodsHomeWork2Math {
         return count;
     }
 
-    private static int countDigits(int number) {
+    public static int countDigits(int number) {
         return String.valueOf(number).length();
     }
 
-    private static boolean checkTwoDigitPalindrome(int number) {
+    public static boolean checkTwoDigitPalindrome(int number) {
         int firstDigit = number / 10;
         int lastDigit = number % 10;
         return firstDigit == lastDigit;
     }
 
-    private static boolean checkFourDigitSum(int number) {
+    public static boolean checkFourDigitSum(int number) {
         int a = number / 1000;
         int b = (number / 100) % 10;
         int c = (number / 10) % 10;
@@ -131,12 +131,12 @@ public class TurqutMethodsHomeWork2Math {
         return (a + b) == (c + d);
     }
 
-    private static int MathTask5(int x) {
+    public static int MathTask5(int x) {
         double sqrt = Math.sqrt(x);
         return (int) Math.floor(sqrt);
     }
 
-    private static int MathTask6(int n6) {
+    public static int MathTask6(int n6) {
         if (n6 % 2 == 0) {
             return n6;
         } else {
@@ -144,7 +144,7 @@ public class TurqutMethodsHomeWork2Math {
         }
     }
 
-    private static void MathTask7(int left, int right) {
+    public static void MathTask7(int left, int right) {
         for (int i = left; i <= right; i++) {
             if (isSelfDividingNumber(i)) {
                 System.out.print(i + " ");
@@ -152,7 +152,7 @@ public class TurqutMethodsHomeWork2Math {
         }
     }
 
-    private static boolean isSelfDividingNumber(int num) {
+    public static boolean isSelfDividingNumber(int num) {
         int temp = num;
         while (num != 0) {
             int digit = num % 10;
@@ -164,7 +164,7 @@ public class TurqutMethodsHomeWork2Math {
         return true;
     }
 
-    private static int MathTask8(int n8) {
+    public static int MathTask8(int n8) {
         if (n8 == 0) {
             return 0;
         } else if (n8 == 1) {
@@ -180,7 +180,7 @@ public class TurqutMethodsHomeWork2Math {
         }
     }
 
-    private static int MathTask9(int numBottles, int numExchange) {
+    public static int MathTask9(int numBottles, int numExchange) {
         int totalBottles = numBottles;
         while (numBottles >= numExchange) {
             totalBottles += numBottles / numExchange;
@@ -189,7 +189,7 @@ public class TurqutMethodsHomeWork2Math {
         return totalBottles;
     }
 
-    private static int MathTask10(String columnTitle) {
+    public static int MathTask10(String columnTitle) {
         int result = 0;
         for (int i = 0; i < columnTitle.length(); i++) {
             int digit = (int) (columnTitle.charAt(i) - 'A' + 1);
