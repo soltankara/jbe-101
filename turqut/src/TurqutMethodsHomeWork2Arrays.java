@@ -19,7 +19,7 @@ public class TurqutMethodsHomeWork2Arrays {
         for (int i = 0; i < size1; i++) {
             nums1[i] = sc.nextInt();
         }
-        ArrayTask1(nums1);
+        System.out.println(ArrayTask1(nums1));
 
         //ArrayTask2 - Difference Between Elements Sum and Digits Sum of an Array
         System.out.print("Enter the size : ");
@@ -43,16 +43,16 @@ public class TurqutMethodsHomeWork2Arrays {
 
     }
 
-    private static void ArrayTask1(int[] nums1) {
+    public static String ArrayTask1(int[] nums1) {
         int[] result = new int[nums1.length * 2];
         for (int i = 0; i < nums1.length; i++) {
             result[i] = nums1[i];
             result[i + nums1.length] = nums1[i];
         }
-        System.out.println("Result: " + Arrays.toString(result));
+        return Arrays.toString(result);
     }
 
-    private static int ArrayTask2(int[] nums2) {
+    public static int ArrayTask2(int[] nums2) {
         int sumOfElements = 0;
         int sumOfDigits = 0;
         for (int num : nums2) {
@@ -65,7 +65,7 @@ public class TurqutMethodsHomeWork2Arrays {
         return sumOfElements - sumOfDigits;
     }
 
-    private static int[] ArrayTask3(int[] nums3) {
+    public static int[] ArrayTask3(int[] nums3) {
         int[] result = new int[nums3.length];
         result[0] = nums3[0];
         for (int i = 1; i < nums3.length; i++) {
@@ -75,4 +75,3 @@ public class TurqutMethodsHomeWork2Arrays {
     }
 
 }
-

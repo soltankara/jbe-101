@@ -21,7 +21,7 @@ public class TurqutMethodsHomeWork2String {
         String str2 = "hello";
         System.out.println(StringTask2(str2));
 
-        //StringTask3 -
+        //StringTask3 - Calculate Digit Sum of String
         System.out.print("s: ");
         String str3 = sc.nextLine();
         System.out.print("k: ");
@@ -30,17 +30,17 @@ public class TurqutMethodsHomeWork2String {
 
     }
 
-    private static String StringTask1(String s) {
+    public static String StringTask1(String s) {
         return s.toLowerCase();
     }
 
-    private static char[] StringTask2(String s) {
+    public static char[] StringTask2(String s) {
         StringBuilder sb = new StringBuilder(s);
         String result = sb.reverse().toString();
         return result.toCharArray();
     }
 
-    private static String StringTask3(String s, int k) {
+    public static String StringTask3(String s, int k) {
         while (s.length() > k) {
             StringBuilder newS = new StringBuilder();
             for (int i = 0; i < s.length(); i += k) {
@@ -55,4 +55,3 @@ public class TurqutMethodsHomeWork2String {
         return s;
     }
 }
-

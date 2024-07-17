@@ -8,11 +8,11 @@ public class TurqutMethodsHomeWork1 {
 
     }
 
-    private static int sumAllWithRecursion(int... numbers) {
+    public static int sumAllWithRecursion(int... numbers) {
         if (numbers.length == 0) {
             return 0;
         }
         return numbers[0] + sumAllWithRecursion(Arrays.copyOfRange(numbers, 1, numbers.length));
     }
-}
 
+}
