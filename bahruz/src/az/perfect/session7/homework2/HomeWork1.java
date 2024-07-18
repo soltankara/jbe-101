@@ -1,4 +1,4 @@
-package az.perfect.array.homework2;
+package az.perfect.session7.homework2;
 
 import java.util.Scanner;
 
