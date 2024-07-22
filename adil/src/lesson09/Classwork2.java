@@ -9,12 +9,12 @@ public class Classwork2 {
         System.out.println("Sum of numbers up to " + number + " using recursion is " + sumUsingRecursion);
     }
 
-    private static int sumUsingRecursion(int number) {
+    public static int sumUsingRecursion(int number) {
         // todo: write your code here
         return number == 0 ? 0 : number + sumUsingRecursion(number - 1);
     }
 
-    private static int sumUsingLoop(int number) {
+    public static int sumUsingLoop(int number) {
         // todo: write your code here
         int sum = 0;
         for (int i = 1; i <= number; i++) {
