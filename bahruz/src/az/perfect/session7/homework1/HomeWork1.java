@@ -1,4 +1,4 @@
-package az.perfect.array.homework1;
+package az.perfect.session7.homework1;
 
 public class HomeWork1 {
 
