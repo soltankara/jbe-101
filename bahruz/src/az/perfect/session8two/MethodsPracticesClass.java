@@ -2,19 +2,19 @@ package az.perfect.session8two;
 
 import az.perfect.session8.LessonHomeWork;
 import az.perfect.session8.LessonHomeWork2;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 
+import java.sql.Connection;
 import java.util.Scanner;
 
 import static org.junit.Assert.*;
 
 public class MethodsPracticesClass {
 
+
+    Calculator calculator;
 
     @Test
     public void stringTesting() {
@@ -23,14 +23,14 @@ public class MethodsPracticesClass {
         assertEquals(s1, s2);
     }
 
-    @BeforeEach
+    @Before
     public void setUp() {
-        Calculator calculator = new Calculator();
+        System.out.println("Before method");
     }
 
-    @AfterEach
+    @After
     public void testMethod() {
-        System.out.println("AfterEach method");
+        System.out.println("After method");
     }
 
     @BeforeClass
@@ -46,8 +46,8 @@ public class MethodsPracticesClass {
 
     @Test
     public void addItionTesting() {
-        Calculator calculator = new Calculator();
-        int result = calculator.addition(5, 9);
+        Calculator calculator1=new Calculator();
+        int result = calculator1.addition(5, 9);
         assertEquals(result, 14);
     }
 
@@ -65,5 +65,20 @@ public class MethodsPracticesClass {
         assertNotNull(text);
 
     }
+
+    @Test
+    public void isTrueTesting() {
+        boolean istrue = true;
+        assertTrue(istrue);
+
+    }
+
+    @Test
+    public void arrayLengTesting() {
+        int arr[] = {5, 4, 7, 9, 45, 6, 78};
+        int length = arr.length;
+        assertEquals(7, length);
+    }
+
 
 }

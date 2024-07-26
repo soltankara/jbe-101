@@ -38,5 +38,16 @@ public class Loops3 {
 
         return true;
     }
+
+    public static String veekday(int number) {
+
+        if (number == 1) {
+            return "Monday";
+        } else if (number == 2) {
+            return "Tuesday";
+        } else {
+            return "Numberi duzgun daxil et";
+        }
+    }
 }
 
