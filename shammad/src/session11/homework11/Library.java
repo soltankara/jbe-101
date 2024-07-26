@@ -1,4 +1,4 @@
-package session11;
+package session11.homework11;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,15 +10,15 @@ public class Library {
         books = new ArrayList<>();
     }
 
-    public void addBook(Book book){
+    public void addBook(Book book) {
         books.add(book);
     }
 
-    public void removeBook(Book book){
+    public void removeBook(Book book) {
         books.remove(book);
     }
 
-    public void listAllBooks(){
+    public void listAllBooks() {
         System.out.println("Books in the library :");
         books.forEach(System.out::println);
         System.out.println();

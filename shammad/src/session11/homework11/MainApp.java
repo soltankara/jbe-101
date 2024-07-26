@@ -1,8 +1,10 @@
-package session11;
+package session11.homework11;
 
+/*
+11. Write a Java program to create a class called "Library" with a collection of books
+    and methods to add and remove books.
+*/
 public class MainApp {
-    //11. Write a Java program to create a class called "Library" with a collection of books
-    //    and methods to add and remove books.
     public static void main(String[] args) {
         Library library = new Library();
 
