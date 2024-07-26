@@ -2,7 +2,7 @@ package lesoon6;
 
 import java.util.Scanner;
 
-public class quest7 {
+public class Quest7 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
