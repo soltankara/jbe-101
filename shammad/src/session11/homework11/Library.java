@@ -1,30 +1,46 @@
 package session11.homework11;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Library {
-    private List<Book> books;
+    private int index = 0;
+    private Book[] books;
 
-    public Library() {
-        books = new ArrayList<>();
+    public Library(int librarySize) {
+        books = new Book[librarySize];
     }
 
     public void addBook(Book book) {
-        books.add(book);
+        if ((index > (books.length - 1)) || books[index]!=null) {
+            System.out.println("Library has ran out of bookshelfs. Can not add another book.");
+            return;
+        }
+        books[index] = book;
+        index++;
     }
 
     public void removeBook(Book book) {
-        books.remove(book);
+        for (int i = 0; i < books.length; i++) {
+            if (books[i] == null)
+                continue;
+            if (books[i].equals(book)) {
+                books[i] = null;
+                index = i; //index points to empty index for availability of adding book
+                return;
+            }
+        }
+        System.out.println("The book does not exists in the library.\n");
     }
 
     public void listAllBooks() {
         System.out.println("Books in the library :");
-        books.forEach(System.out::println);
+        for (Book book : books) {
+            if (book == null)
+                continue;
+            System.out.println(book);
+        }
         System.out.println();
     }
 
-    public List<Book> getBooks() {
+    public Book[] getBooks() {
         return books;
     }
 }
