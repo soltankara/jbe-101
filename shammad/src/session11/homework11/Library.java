@@ -10,7 +10,7 @@ public class Library {
 
     public void addBook(Book book) {
         if (bookCount > (books.length - 1)) {
-            System.out.printf(String.format("Library has ran out of bookshelfs. Can not add %s\n", book.getName()));
+            System.out.printf("Library has ran out of bookshelfs. Can not add %s\n", book.getName());
             return;
         }
         books[bookCount] = book;

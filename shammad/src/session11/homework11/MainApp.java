@@ -16,7 +16,7 @@ public class MainApp {
 
         library.listAllBooks();
 
-        System.out.printf("Removing '%s' book from library\n".formatted(book1.getName()));
+        System.out.printf("Removing '%s' book from library\n", book1.getName());
         library.removeBook(book1);
 
         library.listAllBooks();
