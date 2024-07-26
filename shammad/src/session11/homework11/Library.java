@@ -3,31 +3,38 @@ package session11.homework11;
 public class Library {
     private int index = 0;
     private Book[] books;
+    private int bookCount = 0;
 
     public Library(int librarySize) {
         books = new Book[librarySize];
     }
 
     public void addBook(Book book) {
-        if ((index > (books.length - 1)) || books[index]!=null) {
-            System.out.println("Library has ran out of bookshelfs. Can not add another book.");
+        if ((index > (books.length - 1)) || books[index] != null) {
+            System.out.println("Library has ran out of bookshelfs. Can not add %s".formatted(book.getName()));
             return;
         }
         books[index] = book;
         index++;
+        bookCount++;
     }
 
     public void removeBook(Book book) {
-        for (int i = 0; i < books.length; i++) {
-            if (books[i] == null)
-                continue;
+        boolean exists = false;
+
+        for (int i = 0; i < bookCount; i++) {
             if (books[i].equals(book)) {
-                books[i] = null;
-                index = i; //index points to empty index for availability of adding book
-                return;
+                exists = true;
+
+                for (int j = i; j < bookCount - 1; j++) {
+                    books[j] = books[j + 1];
+                }
+                books[bookCount - 1] = null;
+                bookCount--;
+                break;
             }
         }
-        System.out.println("The book does not exists in the library.\n");
+        System.out.println((exists) ? "Element removed." : "Element does not exists.");
     }
 
     public void listAllBooks() {
