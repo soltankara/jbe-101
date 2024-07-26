@@ -1,7 +1,6 @@
 package session11.homework11;
 
 public class Library {
-    private int index = 0;
     private Book[] books;
     private int bookCount = 0;
 
@@ -10,12 +9,11 @@ public class Library {
     }
 
     public void addBook(Book book) {
-        if ((index > (books.length - 1)) || books[index] != null) {
-            System.out.println("Library has ran out of bookshelfs. Can not add %s".formatted(book.getName()));
+        if (bookCount > (books.length - 1)) {
+            System.out.printf(String.format("Library has ran out of bookshelfs. Can not add %s\n", book.getName()));
             return;
         }
-        books[index] = book;
-        index++;
+        books[bookCount] = book;
         bookCount++;
     }
 
@@ -39,11 +37,11 @@ public class Library {
 
     public void listAllBooks() {
         System.out.println("Books in the library :");
-        for (Book book : books) {
-            if (book == null)
-                continue;
-            System.out.println(book);
+
+        for (int i = 0; i < bookCount; i++) {
+            System.out.println(books[i]);
         }
+
         System.out.println();
     }
 
