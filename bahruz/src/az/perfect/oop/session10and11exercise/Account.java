@@ -2,7 +2,7 @@ package az.perfect.oop.session10and11exercise;
 
 public class Account {
 
-    //Exercise 8
+    //Exercise 7
     private String name;
     private String accountnumber;
     private double balance;
@@ -46,7 +46,7 @@ public class Account {
         return balance += amount;
     }
 
-    public String getAccountInfo(){
-        return "Name: "+name+" ,Account number: "+accountnumber+" ,Balance: "+balance;
+    public String getAccountInfo() {
+        return "Name: " + name + " ,Account number: " + accountnumber + " ,Balance: " + balance;
     }
 }

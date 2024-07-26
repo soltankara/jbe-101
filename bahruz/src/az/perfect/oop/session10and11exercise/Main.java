@@ -39,16 +39,19 @@ public class Main {
         //Exercise 5
         Book book1 = new Book("Java Language", "Memmet Kirazli", "2400869");
         Book book2 = new Book("Atommic habbits", "James Clear", "14500447");
-        Book.addBook(book1);
-        Book.addBook(book2);
-        List<Book> bookList = Book.getBookList();
+
+        Book b = new Book();
+
+        List<Book> bookList = b.getBookList();
+        bookList.add(book1);
+        bookList.add(book2);
 
         for (Book book : bookList) {
             System.out.println(book);
         }
 
         System.out.println();
-        Book.removeBook(book1);
+        bookList.remove(book1);
 
         for (Book book : bookList) {
             System.out.println(book);
@@ -63,32 +66,35 @@ public class Main {
 
 
         //Exercise 7
-        Account account1=new Account("Ayhan A","446239",8341.6);
-        Account account2=new Account("Ahmed D","446440",5341.6);
-        BankAccount.addAccount(account1);
-        BankAccount.addAccount(account2);
-        List<Account> accountList=BankAccount.getAccountList();
+        Account account1 = new Account("Ayhan A", "446239", 8341.6);
+        Account account2 = new Account("Ahmed D", "446440", 5341.6);
+
+        BankAccount bankAccount = new BankAccount();
+
+        List<Account> accountList = bankAccount.getAccountList();
+        accountList.add(account1);
+        accountList.add(account2);
 
         //Accountlari görmek
-        for(Account account: accountList){
+        for (Account account : accountList) {
             System.out.println(account.getAccountInfo());
         }
         System.out.println();
 
 
         //account silmek
-        BankAccount.removeAccount(account2);
+        accountList.remove(account2);
         //Accountlari görmek
-        for(Account account: accountList){
+        for (Account account : accountList) {
             System.out.println(account.getAccountInfo());
         }
         System.out.println();
 
 
         //account elave etmek
-        BankAccount.addAccount(account2);
+        accountList.add(account2);
         //Accountlari görmek
-        for(Account account: accountList){
+        for (Account account : accountList) {
             System.out.println(account.getAccountInfo());
         }
         System.out.println();
@@ -96,7 +102,7 @@ public class Main {
         //Balansdan pul çək
         account1.setBalance(account1.getMoney(500));
         //yenidən accountları görmək
-        for(Account account: accountList){
+        for (Account account : accountList) {
             System.out.println(account.getAccountInfo());
         }
         System.out.println();
@@ -104,14 +110,9 @@ public class Main {
         //balansa pul elave etmek
         account2.setBalance(account2.addMoney(700));
         //yenidən accountları görmək
-        for(Account account: accountList){
+        for (Account account : accountList) {
             System.out.println(account.getAccountInfo());
         }
-
-
-
-
-
 
 
     }

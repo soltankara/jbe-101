@@ -7,7 +7,7 @@ public class Book {
 
     //Exercise 5
 
-    private static List<Book> bookList = new ArrayList<>();
+    private List<Book> bookList = new ArrayList<>();
 
     private String title;
     private String author;
@@ -19,8 +19,11 @@ public class Book {
         this.ISBN = ISBN;
     }
 
-    public static List<Book> getBookList() {
+    public List<Book> getBookList() {
         return bookList;
+    }
+
+    public Book() {
     }
 
     public void setBookList(List<Book> bookList) {
@@ -51,16 +54,10 @@ public class Book {
         this.ISBN = ISBN;
     }
 
-    public static void addBook(Book book) {
-        bookList.add(book);
-    }
-
-    public static void removeBook(Book book) {
-        bookList.remove(book);
-    }
 
     @Override
     public String toString() {
         return "Book: { " + "title: " + title + "  ,author: " + author + " ,ISBN='" + ISBN + '}';
     }
+
 }
