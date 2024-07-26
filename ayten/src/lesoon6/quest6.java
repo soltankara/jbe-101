@@ -2,7 +2,7 @@ package lesoon6;
 
 import java.util.Scanner;
 
-public class quest6 {
+public class Quest6 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

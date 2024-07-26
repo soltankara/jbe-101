@@ -3,7 +3,7 @@ package arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayQuestions {
+public class arrayquestions {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         // 7. Write a Java program to remove a specific element from an array.
