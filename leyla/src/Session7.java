@@ -4,23 +4,12 @@ import java.util.Scanner;
 public class array {
     public static void main(String[] args) {
         //Array exercises #1;
-        int[] numbers = new int[7];
-        numbers[0] = 12;
-        numbers[1] = 23;
-        numbers[2] = 77;
-        numbers[3] = 45;
-        numbers[4] = 33;
-        numbers[5] = 67;
-        numbers[6] = 78;
+        int[] numbers = {12,23,77,45,33,67,78};
         Arrays.sort(numbers);
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
         }
-        String[] names = new String[4];
-        names[0] = "John";
-        names[1] = "Jane";
-        names[2] = "Doe";
-        names[3] = "Jack";
+        String[] names ={"John","Jane", "Doe","Jack"};
         Arrays.sort(names);
         for (int i = 0; i < names.length; i++) {
             System.out.println(names[i]);
@@ -270,17 +259,17 @@ public class array {
         //exercise 23
         int[] arr = {11, 12, 13, 14, 15, 17};
         int[] arra = {22, 12, 555, 14, 442, 33};
-        boolean equalOrNot = true;
+        boolean isEqual = true;
         if (arr.length == arra.length) {
             for (int i = 0; i < arr.length; i++) {
                 if (arr[i] != arra[i]) {
-                    equalOrNot = false;
+                    isEqual = false;
                 }
             }
         } else {
-            equalOrNot = false;
+            isEqual = false;
         }
-        if (equalOrNot) {
+        if (isEqual) {
             System.out.println("Two arrays are equal.");
         } else {
             System.out.println("Two arrays are not equal.");
