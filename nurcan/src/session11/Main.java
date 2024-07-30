@@ -21,8 +21,8 @@ public class Main {
         System.out.println("dog1 name and breed: " + dog1.getName() + ", " + dog1.getBreed());
         System.out.println("dog2 name and breed: " + dog2.getName() + ", " + dog2.getBreed());
         //3-->Rectangle.java
-        Rectangle rec = new Rectangle(3,5);
-        System.out.println("The area of rectangle: "+rec.getWidth()*rec.getHeight());
+        Rectangle rec = new Rectangle(3, 5);
+        System.out.println("The area of rectangle: " + rec.getWidth() * rec.getHeight());
         //4-->Circle.java
         Circle circle = new Circle(2.7);
         double pi = 3.14;
@@ -89,6 +89,7 @@ public class Main {
             if (books[i].getTitle().equals(title)) {
                 books[i] = books[bookCount - 1];
                 books[bookCount - 1] = null;
+                bookCount--;
                 return bookCount;
             }
         }

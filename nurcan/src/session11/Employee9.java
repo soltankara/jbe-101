@@ -28,7 +28,6 @@ public class Employee9 {
     }
 
     public int getYearsOfService() {
-        int currentDate = 2024;
-        return currentDate - getHireYear();
+        return 2024 - getHireYear();
     }
 }
