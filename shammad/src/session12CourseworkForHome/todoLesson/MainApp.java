@@ -1,6 +1,6 @@
 package session12CourseworkForHome.todoLesson;
 
-import todoLesson.service.impl.TaskManager;
+import session12CourseworkForHome.todoLesson.service.impl.TaskManager;
 
 import java.util.Scanner;
 
@@ -15,25 +15,16 @@ public class MainApp {
 
             if (command.equalsIgnoreCase("add")) {
                 taskManager.add();
-                continue;
-            }
-
-            if (command.equalsIgnoreCase("list")) {
+            } else if (command.equalsIgnoreCase("list")) {
                 taskManager.printAll();
-                continue;
-            }
-
-            if (command.equalsIgnoreCase("remove")) {
+            } else if (command.equalsIgnoreCase("remove")) {
                 taskManager.remove();
-                continue;
-            }
-
-            if (command.equalsIgnoreCase("quit")) {
+            } else if (command.equalsIgnoreCase("quit")) {
                 System.out.println("Quitting...");
-                break;
-            }
+            } else {
 
-            System.out.println("Incorrect command. Try again.");
+                System.out.println("Incorrect command. Try again.");
+            }
         }
     }
 }

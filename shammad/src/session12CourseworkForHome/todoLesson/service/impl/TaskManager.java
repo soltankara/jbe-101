@@ -1,8 +1,8 @@
 package session12CourseworkForHome.todoLesson.service.impl;
 
-import todoLesson.Entity.Task;
-import todoLesson.enums.TaskStatus;
-import todoLesson.service.ITaskManager;
+import session12CourseworkForHome.todoLesson.Entity.Task;
+import session12CourseworkForHome.todoLesson.enums.TaskStatus;
+import session12CourseworkForHome.todoLesson.service.ITaskManager;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
@@ -28,15 +28,15 @@ public class TaskManager implements ITaskManager {
 
         System.out.print("Title: ");
         String title = taskScanner.nextLine();
-        if (title.isEmpty() || title.isBlank()){
-            System.out.println("Incorrect title. Try again.");
+        if (title.isBlank()) {
+            System.out.println("Incorrect title. Reverting back to menu");
             return;
         }
 
         System.out.print("Description: ");
         String description = taskScanner.nextLine();
-        if (description.isEmpty() || description.isBlank()){
-            System.out.println("Incorrect description. Try again.");
+        if (description.isBlank()) {
+            System.out.println("Incorrect description. Reverting back to menu");
             return;
         }
 
@@ -44,8 +44,8 @@ public class TaskManager implements ITaskManager {
         System.out.print("Status: ");
         String status = taskScanner.nextLine();
         TaskStatus taskStatus = TaskStatus.fromValue(status);
-        if (taskStatus == null){
-            System.out.println("Incorrect status. Try again");
+        if (taskStatus == null) {
+            System.out.println("Incorrect status. Reverting back to menu");
             return;
         }
 
@@ -53,9 +53,9 @@ public class TaskManager implements ITaskManager {
         String dueDate = taskScanner.nextLine();
         LocalDate parsedDueDate = null;
         try {
-             parsedDueDate = LocalDate.parse(dueDate);
-        }catch (DateTimeParseException e){
-            System.out.println("Incorrect date. Try Again.");
+            parsedDueDate = LocalDate.parse(dueDate);
+        } catch (DateTimeParseException e) {
+            System.out.println("Incorrect date. Reverting back to menu");
         }
 
         Task taskToSave = new Task(idGenerator, title, description, taskStatus, parsedDueDate);

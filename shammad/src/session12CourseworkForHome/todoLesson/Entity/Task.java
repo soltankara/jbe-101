@@ -1,6 +1,6 @@
 package session12CourseworkForHome.todoLesson.Entity;
 
-import todoLesson.enums.TaskStatus;
+import session12CourseworkForHome.todoLesson.enums.TaskStatus;
 
 import java.time.Instant;
 import java.time.LocalDate;
