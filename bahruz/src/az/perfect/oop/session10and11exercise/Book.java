@@ -7,7 +7,10 @@ public class Book {
 
     //Exercise 5
 
-    private List<Book> bookList = new ArrayList<>();
+    List<Book> bookList = new ArrayList<>();
+
+    public Book() {
+    }
 
     private String title;
     private String author;
@@ -18,18 +21,6 @@ public class Book {
         this.author = author;
         this.ISBN = ISBN;
     }
-
-    public List<Book> getBookList() {
-        return bookList;
-    }
-
-    public Book() {
-    }
-
-    public void setBookList(List<Book> bookList) {
-        this.bookList = bookList;
-    }
-
     public String getTitle() {
         return title;
     }

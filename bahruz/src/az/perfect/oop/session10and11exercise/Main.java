@@ -41,21 +41,21 @@ public class Main {
         Book book2 = new Book("Atommic habbits", "James Clear", "14500447");
 
         Book b = new Book();
-
-        List<Book> bookList = b.getBookList();
+        List<Book> bookList = b.bookList;
         bookList.add(book1);
         bookList.add(book2);
 
         for (Book book : bookList) {
             System.out.println(book);
         }
-
-        System.out.println();
         bookList.remove(book1);
 
         for (Book book : bookList) {
             System.out.println(book);
         }
+
+
+
         System.out.println();
 
         //Exercise 6
