@@ -17,31 +17,31 @@ public class Homework4 {
         System.out.print("Choose an operation (+, -, *, /, %): ");
         char op = sc.next().charAt(0);
 
+        System.out.println(calculator(op, num1, num2));
+
+    }
+
+    public static int calculator(char op, int num1, int num2) {
         switch (op) {
             case '+':
-                System.out.println(num1 + num2);
-                break;
+                return num1 + num2;
             case '-':
-                System.out.println(num1 - num2);
-                break;
+                return num1 - num2;
             case '*':
-                System.out.println(num1 * num2);
-                break;
+                return num1 * num2;
             case '/':
                 if (num2 != 0)
-                    System.out.println(num1 / num2);
+                    return num1 / num2;
                 else
-                    System.out.println("Error: Division by zero is not allowed.");
-                break;
+                    return 0;
             case '%':
                 if (num2 != 0)
-                    System.out.println(num1 % num2);
+                    return num1 % num2;
                 else
-                    System.out.println("Error: Modulus by zero is not allowed.");
-                break;
+                    return 0;
             default:
                 System.out.println("Invalid choice.");
         }
-
+        return 0;
     }
 }
