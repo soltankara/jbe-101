@@ -18,15 +18,15 @@ public class Classwork {
                 break;
             }
 
-            if (command.equalsIgnoreCase("add")) {
+            else if (command.equalsIgnoreCase("add")) {
                 service.add();
             }
 
-            if (command.equalsIgnoreCase("list")) {
+            else if (command.equalsIgnoreCase("list")) {
                 service.printAll();
             }
 
-            if (command.equalsIgnoreCase("remove")) {
+            else if (command.equalsIgnoreCase("remove")) {
                 service.remove();
             } else System.out.println("Invalid command. Please enter the valid command.");
         }
