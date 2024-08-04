@@ -43,11 +43,17 @@ public class TaskManager implements ITaskManager {
 
         System.out.print("Status: ");
         String status = taskScanner.nextLine();
-        TaskStatus taskStatus = TaskStatus.fromValue(status);
-        if (taskStatus == null) {
+        TaskStatus taskStatus;
+        try {
+            taskStatus = TaskStatus.fromValue(status);
+        }catch (IllegalArgumentException e){
             System.out.println("Incorrect status. Reverting back to menu");
             return;
         }
+//        if (taskStatus == null) {
+//            System.out.println("Incorrect status. Reverting back to menu");
+//            return;
+//        }
 
         System.out.print("Due date: ");
         String dueDate = taskScanner.nextLine();
@@ -56,6 +62,7 @@ public class TaskManager implements ITaskManager {
             parsedDueDate = LocalDate.parse(dueDate);
         } catch (DateTimeParseException e) {
             System.out.println("Incorrect date. Reverting back to menu");
+            return;
         }
 
         Task taskToSave = new Task(idGenerator, title, description, taskStatus, parsedDueDate);
@@ -95,5 +102,9 @@ public class TaskManager implements ITaskManager {
             String prefix = TaskStatus.isDone(task.getStatus()) ? "[x]" : "[ ]";
             System.out.printf("%s %s \n", prefix, task);
         }
+    }
+
+    public Task[] getTaskArray() {
+        return taskArray;
     }
 }
