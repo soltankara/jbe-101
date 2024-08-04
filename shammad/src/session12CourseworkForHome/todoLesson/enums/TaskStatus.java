@@ -14,11 +14,12 @@ public enum TaskStatus {
         return value;
     }
 
-    public static TaskStatus fromValue(String value) {
+    public static TaskStatus fromValue(String value) throws IllegalArgumentException{
         for (TaskStatus ts : values()) {
             if (ts.value.equalsIgnoreCase(value)) return ts;
         }
-        return null;
+        throw new IllegalArgumentException(String.format("no valid argument found for: %s", value));
+//        return null;
     }
 
     public static boolean isDone(TaskStatus ts) {
