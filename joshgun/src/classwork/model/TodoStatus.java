@@ -5,7 +5,7 @@ public enum TodoStatus {
     PENDING("Pending"),
     DONE("Done");
 
-    private String value;
+    private final String value;
 
     TodoStatus(String value) {
         this.value = value;

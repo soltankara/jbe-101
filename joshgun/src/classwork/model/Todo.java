@@ -5,12 +5,12 @@ import java.time.LocalDate;
 
 public class Todo {
 
-    private Integer id;
-    private String title;
-    private String description;
-    private TodoStatus status;
-    private LocalDate dueDate;
-    private Instant createdAt;
+    private final Integer id;
+    private final String title;
+    private final String description;
+    private final TodoStatus status;
+    private final LocalDate dueDate;
+    private final Instant createdAt;
 
     public Todo(Integer id, String title, String description, TodoStatus status, LocalDate dueDate) {
         this.id = id;
