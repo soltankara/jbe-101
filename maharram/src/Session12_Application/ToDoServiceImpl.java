@@ -47,7 +47,6 @@ public class ToDoServiceImpl implements ToDoService {
         scanner.nextLine();
         for (int i = 0; i < size; i++) {
             if (todos[i].getId() == id) {
-                todos[i] = null;
                 compressArray(i);
                 size--;
                 break;

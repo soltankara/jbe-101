@@ -13,20 +13,14 @@ public class ClassWork {
 
             if (command.equalsIgnoreCase("quit")) {
                 break;
-            }
-
-            if (command.equalsIgnoreCase("add")) {
+            } else if (command.equalsIgnoreCase("add")) {
                 System.out.print("How many time  would you like to add?  : ");
                 int count = scanner.nextInt();
                 scanner.nextLine();
                 service.add(count);
-            }
-
-            if (command.equalsIgnoreCase("list")) {
+            } else if (command.equalsIgnoreCase("list")) {
                 service.printAll();
-            }
-
-            if (command.equalsIgnoreCase("remove")) {
+            } else if (command.equalsIgnoreCase("remove")) {
                 service.remove();
             }
         }
