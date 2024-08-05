@@ -22,10 +22,10 @@ public class HomeWork1 {
     }
 
     private static int sumUsingRecursion(int number) {
-        if (number == 1)
+        if (number == 1) {
             return 1;
-        else {
-            return number + sumUsingLoop(number - 1);
+        } else {
+            return number + sumUsingRecursion(number - 1);
         }
     }
 }
