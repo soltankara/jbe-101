@@ -1,4 +1,4 @@
-package turqut.src.mobileGamesLibraryFirstApp.model;
+package mobileGamesLibraryFirstApp.model;
 
 public class Game {
     private static int idCounter = 1;

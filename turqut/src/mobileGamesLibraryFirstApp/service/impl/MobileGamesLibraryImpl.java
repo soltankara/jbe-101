@@ -1,9 +1,9 @@
-package turqut.src.mobileGamesLibraryFirstApp.service.impl;
+package mobileGamesLibraryFirstApp.service.impl;
 
 
-import turqut.src.mobileGamesLibraryFirstApp.model.Game;
-import turqut.src.mobileGamesLibraryFirstApp.model.GameCategory;
-import turqut.src.mobileGamesLibraryFirstApp.service.GameLibrary;
+import mobileGamesLibraryFirstApp.model.Game;
+import mobileGamesLibraryFirstApp.model.GameCategory;
+import mobileGamesLibraryFirstApp.service.GameLibrary;
 
 public class MobileGamesLibraryImpl implements GameLibrary {
     private Game[][] games;

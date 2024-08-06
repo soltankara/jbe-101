@@ -1,8 +1,8 @@
-package turqut.src.mobileGamesLibraryFirstApp;
+package mobileGamesLibraryFirstApp;
 
-import turqut.src.mobileGamesLibraryFirstApp.model.Game;
-import turqut.src.mobileGamesLibraryFirstApp.model.GameCategory;
-import turqut.src.mobileGamesLibraryFirstApp.service.impl.MobileGamesLibraryImpl;
+import mobileGamesLibraryFirstApp.model.Game;
+import mobileGamesLibraryFirstApp.model.GameCategory;
+import mobileGamesLibraryFirstApp.service.impl.MobileGamesLibraryImpl;
 
 import java.util.Scanner;
 

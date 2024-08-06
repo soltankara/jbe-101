@@ -1,7 +1,7 @@
-package turqut.src.mobileGamesLibraryFirstApp.model;
+package mobileGamesLibraryFirstApp.model;
 
 import org.junit.*;
-import turqut.src.mobileGamesLibraryFirstApp.service.impl.MobileGamesLibraryImpl;
+import mobileGamesLibraryFirstApp.service.impl.MobileGamesLibraryImpl;
 
 import static org.junit.Assert.*;
 

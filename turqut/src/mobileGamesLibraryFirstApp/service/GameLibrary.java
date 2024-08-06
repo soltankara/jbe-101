@@ -1,8 +1,8 @@
-package turqut.src.mobileGamesLibraryFirstApp.service;
+package mobileGamesLibraryFirstApp.service;
 
 
-import turqut.src.mobileGamesLibraryFirstApp.model.Game;
-import turqut.src.mobileGamesLibraryFirstApp.model.GameCategory;
+import mobileGamesLibraryFirstApp.model.Game;
+import mobileGamesLibraryFirstApp.model.GameCategory;
 
 public interface GameLibrary {
     void addGame(Game game);
