@@ -8,29 +8,38 @@ public class ClassWork {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.print("Command: ");
+            System.out.print("Command (add, list, remove, quit): ");
             String command = scanner.nextLine();
-            if (!("add".equalsIgnoreCase(command) || command.equalsIgnoreCase("list") || "remove".equalsIgnoreCase(command) || command.equalsIgnoreCase("quit"))) {
-                try {
-                    throw new InvalidException("invalid command  : " + command);
-                } catch (InvalidException ex) {
-                    System.out.println(ex.getMessage());
-                    System.out.println("pls enter real command (add , list , remove , quit ) ");
-                }
-            }
 
             if (command.equalsIgnoreCase("quit")) {
                 break;
-            } else if (command.equalsIgnoreCase("add")) {
-                System.out.print("How many time  would you like to add?  : ");
-                int count = scanner.nextInt();
-                scanner.nextLine();
-                service.add(count);
-            } else if (command.equalsIgnoreCase("list")) {
-                service.printAll();
-            } else if (command.equalsIgnoreCase("remove")) {
-                service.remove();
+            }
+
+            switch (command.toLowerCase()) {
+                case "add":
+                    handleAddCommand(service, scanner);
+                    break;
+                case "list":
+                    service.printAll();
+                    break;
+                case "remove":
+                    service.remove();
+                    break;
+                default:
+                    System.out.println("Invalid command: " + command);
+                    System.out.println("Please enter a valid command (add, list, remove, quit).");
             }
         }
+    }
+
+    private static void handleAddCommand(ToDoService service, Scanner scanner) {
+        System.out.print("How many items would you like to add? ");
+        while (!scanner.hasNextInt()) {
+            System.out.println("Please enter a valid number.");
+            scanner.next();
+        }
+        int count = scanner.nextInt();
+        scanner.nextLine(); // consume the newline character
+        service.add(count);
     }
 }
