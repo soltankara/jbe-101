@@ -1,8 +1,8 @@
-package Module02.Session12.Classwork.Service;
+package Module02.Session12.ClassworkToDo.Service;
 
-import Module02.Session12.Classwork.Entity.ToDo;
+import Module02.Session12.ClassworkToDo.Entity.ToDo;
 
-import static Module02.Session12.Classwork.Model.ToDoStatus.isDone;
+import static Module02.Session12.ClassworkToDo.Model.ToDoStatus.isDone;
 
 public interface ToDoService {
     void addToDo();

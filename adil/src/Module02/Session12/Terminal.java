@@ -1,7 +1,7 @@
 package Module02.Session12;
 
-import Module02.Session12.Classwork.Service.ToDoService;
-import Module02.Session12.Classwork.Service.impl.ToDoServiceImpl;
+import Module02.Session12.ClassworkToDo.Service.ToDoService;
+import Module02.Session12.ClassworkToDo.Service.impl.ToDoServiceImpl;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class Terminal {
         ToDoService toDoService = new ToDoServiceImpl();
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.print("Command: ");
+            System.out.print("\nCommand: ");
             String command = sc.nextLine().toLowerCase();
             switch (command) {
                 case "quit":
@@ -23,6 +23,7 @@ public class Terminal {
                     break;
                 case "remove":
                     toDoService.removeToDo();
+                    break;
                 default:
                     System.out.println("Invalid command");
             }
