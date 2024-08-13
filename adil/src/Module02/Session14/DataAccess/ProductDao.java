@@ -7,14 +7,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProductDao implements Dao<Product> {
-    private static List<Product> products = new ArrayList<>();
+    private static final List<Product> products = new ArrayList<>();
 
     @Override
     public void save(Product product) {
         products.add(product);
     }
 
-    public List<Product> list() {
+    public List<Product> findAll() {
         return products;
     }
 }

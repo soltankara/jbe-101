@@ -24,7 +24,7 @@ public class ProductManager implements ProductService {
         double price = sc.nextDouble();
         sc.nextLine();
         System.out.print("Is product available? (Y/N): ");
-        boolean hasStock = sc.next().equals("Y");
+        boolean hasStock = sc.next().equalsIgnoreCase("Y");
         sc.nextLine();
         String type;
         Type productType;
@@ -32,12 +32,9 @@ public class ProductManager implements ProductService {
             System.out.print("Enter product type: ");
             type = sc.nextLine().toLowerCase();
             try {
-                productType = typeDao.getByName(type);
-                if (!productType.isActive()) {
-                    System.out.println("Type is not active. Try again.");
-                    continue;
-                }
-                break;
+                productType = typeDao.findByName(type);
+                if (productType.isActive()) break;
+                System.out.println("Type is not active. Try again.");
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage() + " Try again");
             }
@@ -48,7 +45,7 @@ public class ProductManager implements ProductService {
             System.out.print("Enter product category: ");
             category = sc.nextLine().toLowerCase();
             try {
-                productCategory = categoryDao.findCategoryByName(category);
+                productCategory = categoryDao.findByName(category);
             } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage() + " Try again");
                 continue;
@@ -74,7 +71,7 @@ public class ProductManager implements ProductService {
         types.remove(productType);
         types.add(newType);
         productCategory.setProductTypes(types);
-        categoryDao.update(productCategory);
+        categoryDao.save(productCategory);
     }
 
     @Override
@@ -88,22 +85,27 @@ public class ProductManager implements ProductService {
     public void addProductType(String productType, String categoryName, boolean isActive) {
         productType = productType.toLowerCase();
         categoryName = categoryName.toLowerCase();
-        Category category = categoryDao.findCategoryByName(categoryName);
+        Category category = categoryDao.findByName(categoryName);
         Type type = new Type(productType, categoryName, isActive);
         typeDao.save(type);
         List<Type> productTypes = category.getProductTypes();
         productTypes.add(type);
         category.setProductTypes(productTypes);
-        categoryDao.update(category);
+        categoryDao.save(category);
     }
 
     @Override
     public void listCategory() {
         System.out.print("Enter category name: ");
         String category = sc.nextLine().toLowerCase();
-        Category productCategory = categoryDao.findCategoryByName(category);
+        Category productCategory = categoryDao.findByName(category);
         for (Type type : productCategory.getProductTypes()) {
-            for (Product product : type.getProducts()) {
+            List<Product> products = type.getProducts();
+            if (products.isEmpty()) {
+                System.out.println("Product list is empty");
+                return;
+            }
+            for (Product product : products) {
                 System.out.println(product);
             }
         }
@@ -111,16 +113,26 @@ public class ProductManager implements ProductService {
 
     @Override
     public void listProducts() {
-        for (Product product : productDao.list()) {
+        List<Product> products = productDao.findAll();
+        if (products.isEmpty()) {
+            System.out.println("Product list is empty");
+            return;
+        }
+        for (Product product : products) {
             System.out.println(product);
         }
     }
 
     @Override
     public void listProductType() {
-        System.out.print("Enter product type: ");
+        System.out.print("Enter type name: ");
         String type = sc.nextLine().toLowerCase();
-        Type productType = typeDao.getByName(type);
+        Type productType = typeDao.findByName(type);
+        List<Product> products = productType.getProducts();
+        if (products.isEmpty()) {
+            System.out.println("Product list is empty");
+            return;
+        }
         for (Product product : productType.getProducts()) {
             System.out.println(product);
         }

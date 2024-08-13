@@ -2,7 +2,6 @@ package Module02.Session14;
 
 import Module02.Session14.Business.ProductManager;
 import Module02.Session14.Business.ProductService;
-import Module02.Session14.Entities.Product;
 
 import java.util.Scanner;
 

@@ -7,24 +7,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TypeDao implements Dao<Type> {
-    private static List<Type> types = new ArrayList<>();
+    private static final List<Type> types = new ArrayList<>();
 
     @Override
     public void save(Type type) {
         try {
-            Type oldType = getByName(type.getName());
+            Type oldType = findByName(type.getName());
             int index = types.indexOf(oldType);
             types.set(index, type);
-        }catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             types.add(type);
         }
     }
 
-    public List<Type> list() {
-        return types;
-    }
-
-    public Type getByName(String name) {
+    public Type findByName(String name) {
         for (Type type : types) {
             if (type.getName().equals(name)) {
                 return type;
