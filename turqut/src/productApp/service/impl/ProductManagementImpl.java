@@ -11,12 +11,12 @@ import productApp.service.ProductManagement;
 
 
 public class ProductManagementImpl implements ProductManagement {
-    private ArrayList<Product> ProductList = new ArrayList<>();
+    private ArrayList<Product> productList = new ArrayList<>();
 
     @Override
     public void addProduct(String productName, double price, boolean hasStock, ProductType type, ProductCategory category) {
         if (type.getStatus() == Status.ACTIVE) {
-            ProductList.add(new Product(productName, price, hasStock, type, category));
+            productList.add(new Product(productName, price, hasStock, type, category));
             System.out.println("Product added successfully!");
         } else {
             System.out.println("Sorry, the product type " + type.getTypeName() + " is INACTIVE and cannot be added.");
@@ -25,13 +25,13 @@ public class ProductManagementImpl implements ProductManagement {
 
     @Override
     public List<Product> list() {
-        return new ArrayList<>(ProductList);
+        return new ArrayList<>(productList);
     }
 
     @Override
     public List<Product> listByCategory(String categoryName) {
         List<Product> result = new ArrayList<>();
-        for (Product product : ProductList) {
+        for (Product product : productList) {
             if (product.getProductCategory().getCategoryName().equalsIgnoreCase(categoryName)) {
                 result.add(product);
             }
@@ -42,7 +42,7 @@ public class ProductManagementImpl implements ProductManagement {
     @Override
     public List<Product> listByType(String typeName) {
         List<Product> result = new ArrayList<>();
-        for (Product product : ProductList) {
+        for (Product product : productList) {
             if (product.getProductType().getTypeName().equalsIgnoreCase(typeName)) {
                 result.add(product);
             }
