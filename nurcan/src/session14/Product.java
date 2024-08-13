@@ -13,9 +13,6 @@ public class Product {
     private Instant modifiedAt;
 
     public Product(int id, String name, double price, boolean hasStock, Type type) {
-        if (type == null || !type.isActive()) {
-            throw new IllegalArgumentException("Type is not active or valid");
-        }
         this.id = id;
         this.name = name;
         this.price = price;

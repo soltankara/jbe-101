@@ -9,7 +9,6 @@ public class ProductManager {
 
     public ProductManager(int maxProducts, int maxCategories, int maxTypes) {
         products = new Product[maxProducts];
-        productCount = 0;
         categories = new Category[maxCategories];
         categoryCount = 0;
         nextProductId = 1;

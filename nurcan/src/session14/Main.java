@@ -12,20 +12,20 @@ public class Main {
             System.out.print("Price: ");
             double price = scan.nextDouble();
             System.out.print("Has Stock (true/false): ");
-            boolean hasStock=scan.nextBoolean();
+            boolean hasStock = scan.nextBoolean();
             System.out.print("Type name: ");
             String typeNAme = scan.next();
             System.out.print("Category name: ");
             String categoryName = scan.next();
 
-            try{
+            try {
                 pm.addProduct(name, price, hasStock, typeNAme, categoryName);
-            }catch (IllegalArgumentException e){
+            } catch (IllegalArgumentException e) {
                 System.out.println(e.getMessage());
             }
             System.out.print("Do you want to continue? (yes/no) : ");
-            String answer=scan.next();
-            if(answer.equalsIgnoreCase("no")){
+            String answer = scan.next();
+            if (answer.equalsIgnoreCase("no")) {
                 break;
             }
         }
