@@ -57,4 +57,15 @@ public class Product {
     public ProductCategory getProductCategory() {
         return productCategory;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", productName='" + productName + '\'' +
+                ", price=" + price +
+                ", hasStock=" + hasStock +
+                ", createdAt=" + createdAt +
+                '}';
+    }
 }

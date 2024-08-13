@@ -96,7 +96,7 @@ public class App {
                     } else if (listChoice.startsWith("list type::")) {
                         String typeName = listChoice.split("::")[1].trim();
                         for (Product product : pm.listByType(typeName)) {
-                            System.out.println("Product ID: " + product.getId() + ", Name: " + product.getProductName() + ", Price: " + product.getPrice() + ", Has Stock: " + product.isHasStock() + ", Created at: " + product.getCreatedAt());
+                            System.out.println(product);
                         }
                     }
                     break;
