@@ -2,6 +2,8 @@ package productApp;
 
 import java.util.Scanner;
 
+import productApp.model.Status;
+
 
 import productApp.model.Product;
 import productApp.model.ProductCategory;
@@ -86,12 +88,12 @@ public class App {
                     String listChoice = sc.nextLine();
                     if (listChoice.equalsIgnoreCase("list")) {
                         for (Product product : pm.list()) {
-                            System.out.println("Product ID: " + product.getId() + ", Name: " + product.getProductName() + ", Price: " + product.getPrice() + ", Has Stock: " + product.isHasStock() + ", Created at: " + product.getCreatedAt());
+                            System.out.println(product);
                         }
                     } else if (listChoice.startsWith("list category::")) {
                         String categoryName = listChoice.split("::")[1].trim();
                         for (Product product : pm.listByCategory(categoryName)) {
-                            System.out.println("Product ID: " + product.getId() + ", Name: " + product.getProductName() + ", Price: " + product.getPrice() + ", Has Stock: " + product.isHasStock() + ", Created at: " + product.getCreatedAt());
+                            System.out.println(product);
                         }
                     } else if (listChoice.startsWith("list type::")) {
                         String typeName = listChoice.split("::")[1].trim();
