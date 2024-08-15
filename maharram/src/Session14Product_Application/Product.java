@@ -1,4 +1,4 @@
-package Session13Product_Application;
+package Session14Product_Application;
 
 public class Product {
     String name;
