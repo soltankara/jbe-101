@@ -23,10 +23,12 @@ public class ProductManager {
     private boolean isValidCategory(String category1) {
         for (String validCategory : categorys) {
             if (validCategory.equals(category1)) {
+                return true;
             }
         }
         return false;
     }
+
 
     public void addProduct(String name, double price, boolean hasStock, String type, String category) {
         if (!isValidType(type)) {
@@ -44,14 +46,14 @@ public class ProductManager {
 
     public void listProducts() {
         for (int i = 0; i < productCount; i++) {
-            System.out.println(products[i].toString());
+            System.out.println(products[i]);
         }
     }
 
     public void listProductsByType(String type) {
         for (int i = 0; i < productCount; i++) {
             if (products[i].getType().equals(type)) {
-                System.out.println(products[i].toString());
+                System.out.println(products[i]);
             }
         }
     }
@@ -59,7 +61,7 @@ public class ProductManager {
     public void listProductsByCategory(String category) {
         for (int i = 0; i < productCount; i++) {
             if (products[i].getCategory().equals(category)) {
-                System.out.println(products[i].toString());
+                System.out.println(products[i]);
             }
         }
     }

@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-     ProductManager productManager = new ProductManager(80);
+        ProductManager productManager = new ProductManager(80);
         Scanner sc = new Scanner(System.in);
 
-        while(true){
+        while (true) {
             System.out.println("Menu :");
             System.out.println("enter 1 for add product ");
             System.out.println("enter 2 to see all product");
@@ -18,7 +18,7 @@ public class Main {
             int choice = sc.nextInt();
             sc.nextLine();
 
-            switch (choice){
+            switch (choice) {
                 case 1:
                     System.out.print("enter the name of product : ");
                     String name = sc.nextLine();
@@ -58,20 +58,5 @@ public class Main {
                     System.out.println("wrong choice ,pls try again ");
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }
