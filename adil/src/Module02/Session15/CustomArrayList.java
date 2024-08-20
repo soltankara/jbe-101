@@ -21,17 +21,6 @@ public class CustomArrayList<T> implements CustomList<T> {
     }
 
     @Override
-    public T getByIndex(int index) throws Exception {
-        T t;
-        try {
-            t = elements[index];
-        } catch (RuntimeException e) {
-            throw new Exception("Element not found");
-        }
-        return t;
-    }
-
-    @Override
     public void print() {
         for (T element : elements) {
             if (element != null) System.out.println(element);

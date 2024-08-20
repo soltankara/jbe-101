@@ -18,5 +18,8 @@ public interface CustomList<T> {
 
     Optional<T> findByIndex(int index);
 
-    T getByIndex(int index) throws Exception;
+    default T getByIndex(int index) throws Exception{
+        Optional<T> element = findByIndex(index);
+        return element.orElseThrow(() -> new Exception("Element not found"));
+    }
 }
