@@ -92,11 +92,14 @@ public class searchingAndSorting {
 
     //Helper method for 2807
     public static int gcd(int a, int b) {
-        if (b == 0) {
-            return a;
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
         }
-        return gcd(b, a % b);
+        return a;
     }
+
 
     //2396. Strictly Palindromic Number - Medium
     public static boolean isStrictlyPalindromic(int n) {
@@ -138,12 +141,14 @@ public class searchingAndSorting {
 
     public static void replace(int i, int[] nums) {
         int l = nums.length;
-        if (i > 0 && i <= l && i != nums[i - 1]) {
+
+        while (i > 0 && i <= l && i != nums[i - 1]) {
             int v = nums[i - 1];
             nums[i - 1] = i;
-            replace(v, nums);
+            i = v;
         }
     }
+
 
     //4. Median of Two Sorted Arrays - Hard
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
