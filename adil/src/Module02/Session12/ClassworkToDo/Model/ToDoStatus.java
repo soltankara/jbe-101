@@ -1,4 +1,4 @@
-package Module02.Session12.Classwork.Model;
+package Module02.Session12.ClassworkToDo.Model;
 
 public enum ToDoStatus {
     DONE("done"),
@@ -13,13 +13,13 @@ public enum ToDoStatus {
         return value;
     }
 
-    public static ToDoStatus getFromValue(String value) {
+    public static ToDoStatus getFromValue(String value) throws IllegalArgumentException {
         for (ToDoStatus toDoStatus : values()) {
             if (toDoStatus.getValue().equalsIgnoreCase(value)) {
                 return toDoStatus;
             }
         }
-        return null;
+        throw new IllegalArgumentException("Invalid status value");
     }
 
     public static boolean isDone(ToDoStatus status) {

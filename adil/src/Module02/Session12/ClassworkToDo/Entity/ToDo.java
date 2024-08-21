@@ -1,6 +1,6 @@
-package Module02.Session12.Classwork.Entity;
+package Module02.Session12.ClassworkToDo.Entity;
 
-import Module02.Session12.Classwork.Model.ToDoStatus;
+import Module02.Session12.ClassworkToDo.Model.ToDoStatus;
 
 import java.time.Instant;
 import java.time.LocalDate;
