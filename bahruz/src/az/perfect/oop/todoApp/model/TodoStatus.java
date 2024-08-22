@@ -1,5 +1,7 @@
 package az.perfect.oop.todoApp.model;
 
+import az.perfect.oop.todoApp.exception.TodoException;
+
 public enum TodoStatus {
 
     DONE("Done"),
@@ -21,9 +23,9 @@ public enum TodoStatus {
                 return todoStatus;
 
             }
-
         }
-        return null;
+        throw new TodoException("Could not find value for TodoStatus ");
+
     }
 
     public static boolean isDone(TodoStatus status) {

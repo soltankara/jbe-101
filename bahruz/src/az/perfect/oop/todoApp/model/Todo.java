@@ -12,13 +12,13 @@ public class Todo {
     private LocalDate dueDate;
     private Instant createdAt;
 
-    public Todo(Integer id,String title, String description, TodoStatus status, LocalDate dueDate) {
-        this.id=id;
+    public Todo(Integer id, String title, String description, TodoStatus status, LocalDate dueDate) {
+        this.id = id;
         this.title = title;
         this.description = description;
         this.status = status;
         this.dueDate = dueDate;
-        this.createdAt =Instant.now();
+        this.createdAt = Instant.now();
     }
 
     public void setId(Integer id) {

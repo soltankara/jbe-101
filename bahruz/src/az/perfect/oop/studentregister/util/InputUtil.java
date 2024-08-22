@@ -1,4 +1,4 @@
-package az.perfect.oop.todoApp.util;
+package az.perfect.oop.studentregister.util;
 
 import java.util.Scanner;
 
@@ -13,8 +13,14 @@ public class InputUtil {
     public static int getCount(String title) {
         Scanner sc = new Scanner(System.in);
         System.out.println(title + ":");
-        return sc.nextInt();
+        String countStr = sc.nextLine();
+        try {
+            return Integer.parseInt(countStr);
+
+        } catch (IllegalArgumentException illegalArgumentException) {
+            throw new IllegalArgumentException("Invalid number. Please enter a numeric value for number.");
+
+        }
+
     }
-
-
 }

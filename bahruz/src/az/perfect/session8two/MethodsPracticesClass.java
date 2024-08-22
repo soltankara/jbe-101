@@ -1,13 +1,6 @@
 package az.perfect.session8two;
 
-import az.perfect.session8.LessonHomeWork;
-import az.perfect.session8.LessonHomeWork2;
 import org.junit.*;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-
-import java.sql.Connection;
-import java.util.Scanner;
 
 import static org.junit.Assert.*;
 

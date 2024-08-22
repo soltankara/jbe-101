@@ -49,4 +49,13 @@ public class Account {
     public String getAccountInfo() {
         return "Name: " + name + " ,Account number: " + accountnumber + " ,Balance: " + balance;
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "name='" + name + '\'' +
+                ", accountnumber='" + accountnumber + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }

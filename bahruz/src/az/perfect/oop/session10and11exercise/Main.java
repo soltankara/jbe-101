@@ -1,5 +1,6 @@
 package az.perfect.oop.session10and11exercise;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -69,15 +70,14 @@ public class Main {
         Account account1 = new Account("Ayhan A", "446239", 8341.6);
         Account account2 = new Account("Ahmed D", "446440", 5341.6);
 
-        BankAccount bankAccount = new BankAccount();
 
-        List<Account> accountList = bankAccount.getAccountList();
+        List<Account> accountList =new ArrayList<>();
         accountList.add(account1);
         accountList.add(account2);
 
         //Accountlari görmek
         for (Account account : accountList) {
-            System.out.println(account.getAccountInfo());
+            System.out.println(account);
         }
         System.out.println();
 
