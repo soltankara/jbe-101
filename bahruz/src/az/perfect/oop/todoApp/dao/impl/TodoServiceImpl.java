@@ -9,8 +9,6 @@ import az.perfect.oop.todoApp.util.InputUtil;
 import java.time.LocalDate;
 
 public class TodoServiceImpl implements TodoService {
-
-
     private Todo todolist[];
 
     @Override
@@ -69,7 +67,6 @@ public class TodoServiceImpl implements TodoService {
             if (commandİd <= 0) {
                 throw new IllegalArgumentException("Enter the positive CommandID!");
             }
-
             String commandValue = InputUtil.getText("Enter the value you want to change:" +
                     "title / description / status / dueDate");
             boolean found = false;
@@ -121,8 +118,7 @@ public class TodoServiceImpl implements TodoService {
             }
 
         } catch (TodoException todoException) {
-            String getMessage = todoException.getMessage();
-            System.out.println(getMessage);
+            System.out.println(todoException.getMessage());
 
         }
 

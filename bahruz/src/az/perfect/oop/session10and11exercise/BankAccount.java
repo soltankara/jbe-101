@@ -8,9 +8,6 @@ public class BankAccount {
     //Exercise 7
     private List<Account> accountList = new ArrayList<>();
 
-    public List<Account> getAccountList() {
-        return accountList;
-    }
 
 
 }
