@@ -1,0 +1,28 @@
+ArrayList: Daxildə dinamik massivdən istifadə edir
+Bu o deməkdir ki elementlər ardıcıl yaddaş bloklarında saxlanılır
+
+LinkedList: Daxildə iki istiqamətli  siyahıdan istifadə edir
+Hər element növbəti və əvvəlki elementə referencesini saxlayır
+
+==================================================================
+
+ArrayList: Daha az yaddaş istifadə edir
+çünki yalnız elementlər üçün yaddaş tələb edir
+
+LinkedList: Daha çox yaddaş istifadə edir
+çünki hər  element üçün və əlavə göstəricilər üçün yaddaş tələb edir
+
+==================================================================
+
+ArrayList:Əgər proqramda daha çox məlumat oxunacaqsa və əməliyyatları çox
+olmayacaqsa ArrayList daha yaxşı performans göstərir
+
+LinkedList: Əgər proqramda daha çox əməliyyatlar əlavə etme və çıxarma olacaqsa
+LinkedList daha yaxşı performans göstərir
+
+==================================================================
+
+LinkedList: İndeksə əsasən məlumatlara çıxışı daha yavaşdır O(n)
+
+ArrayList: Məlumatlara indekslə çıxışı çox sürətlidir
+çünki massivdə elementlər birbaşa indekslə təyin edilir O(1)
