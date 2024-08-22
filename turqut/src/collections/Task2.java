@@ -13,11 +13,8 @@ public class Task2 {
 
     //Arrays - DS
     public static List<Integer> reverseArray(List<Integer> a) {
-        List<Integer> reversed = new ArrayList<>();
-        for (int i = a.size() - 1; i >= 0; i--) {
-            reversed.add(a.get(i));
-        }
-        return reversed;
+        Collections.reverse(a);
+        return a;
     }
 
     //2D Arrays - DS
@@ -36,12 +33,10 @@ public class Task2 {
 
     //Left Rotation
     public static List<Integer> rotateLeft(int d, List<Integer> arr) {
-        List<Integer> rotatedArr = new ArrayList<>(arr);
-        for (int i = 0; i < d; i++) {
-            rotatedArr.add(rotatedArr.remove(0));
-        }
-        return rotatedArr;
+        Collections.rotate(arr, -d);
+        return arr;
     }
+
 
     //Print the elements of a Linked List
     static void printLinkedList(SinglyLinkedListNode head) {
@@ -172,23 +167,21 @@ public class Task2 {
 
     //Get Node Value
     public static int getNode(SinglyLinkedListNode llist, int positionFromTail) {
-        SinglyLinkedListNode current = llist;
-        SinglyLinkedListNode lastNode = null;
+        SinglyLinkedListNode first = llist;
+        SinglyLinkedListNode second = llist;
 
-        int count = 0;
-        while (current != null) {
-            lastNode = current;
-            current = current.next;
-            count++;
+        for (int i = 0; i <= positionFromTail; i++) {
+            if (first == null) {
+                throw new IndexOutOfBoundsException("Position from tail out of bounds");
+            }
+            first = first.next;
         }
-        if (positionFromTail >= count) {
-            throw new IndexOutOfBoundsException("Position from tail out of bounds");
+
+        while (first != null) {
+            first = first.next;
+            second = second.next;
         }
-        current = llist;
-        for (int i = 0; i < count - positionFromTail - 1; i++) {
-            current = current.next;
-        }
-        return current.data;
+        return second.data;
     }
 
     //Delete duplicate-value nodes from a sorted linked list
