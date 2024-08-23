@@ -1,0 +1,10 @@
+HashMap, LinkedHashMap and TreeMap are all key-value data structures in Java.
+HashMap : The order of elements does not follow a certain order and works faster than others. Time complexity is O(1).
+LinkedHashMap : The order of elements is controlled, but the speed is poor compared to HashMap.
+TreeMap : Maintains order of elements based on Comparator, time complexity is O(log n).
+
+
+HashSet, LinkedHashSet and TreeSet are all three data structures used to store non-repeating elements in Java.
+HashSet : The array of elements does not follow a specific order and works faster than others. Time complexity is O(1).
+LinkedHashSet : The order of elements is controlled, but the speed is poor compared to HashMap.
+TreeSet : Stores the order of elements based on Comparator, time complexity is O(log n).
