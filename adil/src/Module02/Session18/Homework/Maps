@@ -1,0 +1,7 @@
+1.  HashMap vs LinkedHashMap vs TreeMap:
+
+--  LinkedHashMap contains hashmap and doubly linked list which holds elements. This implementation store elements
+    according to their insertion order. But linkedHashmap takes more memory than hashMap, because it keeps linkedList
+    additionally.
+
+--  TreeMap contains elements according to sorted keys.
