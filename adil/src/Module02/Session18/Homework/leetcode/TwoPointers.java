@@ -1,8 +1,67 @@
 package Module02.Session18.Homework.leetcode;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class TwoPointers {
+    public String fractionAddition(String expression) {
+
+        //https://leetcode.com/problems/fraction-addition-and-subtraction/description/?envType=daily-question&envId=2024-08-23
+
+        List<Integer> denominators = new ArrayList<>();
+        for (int i = 2; i < expression.length(); i++) {
+            StringBuilder denoStr = new StringBuilder();
+            if (expression.charAt(i - 1) == '/') {
+                while (!(expression.charAt(i) == '-' || expression.charAt(i) == '+')) {
+                    denoStr.append(expression.charAt(i++));
+                    if (i == expression.length()) break;
+                }
+                denominators.add(Integer.parseInt(denoStr.toString()));
+            }
+        }
+        int denominator;
+        denominator = denominators.getFirst();
+        for (int i = 1; i < denominators.size(); i++) {
+            denominator = LCM(denominator, denominators.get(i));
+        }
+        if (expression.charAt(0) != '-') expression = '+' + expression;
+        int sum = 0;
+        for (int i = 0; i < expression.length() - 2; i++) {
+            if (expression.charAt(i) == '-' || expression.charAt(i) == '+') {
+                StringBuilder numStr = new StringBuilder();
+                while (expression.charAt(i) != '/') {
+                    numStr.append(expression.charAt(i++));
+                }
+                i++;
+                StringBuilder denoStr = new StringBuilder();
+                while (!(expression.charAt(i) == '-' || expression.charAt(i) == '+')) {
+                    denoStr.append(expression.charAt(i++));
+                    if (i == expression.length()) break;
+                }
+                i--;
+                int num = Integer.parseInt(numStr.toString());
+                int deno = Integer.parseInt(denoStr.toString());
+                num = num * denominator / deno;
+                sum += num;
+            }
+        }
+        if (sum == 0) {
+            return "0/1";
+        }
+        int gcd = GCD(sum, denominator);
+        if (gcd < 0) gcd = -gcd;
+        return sum / gcd + "/" + denominator / gcd;
+    }
+
+    private int GCD(int a, int b) {
+        if (b == 0) return a;
+        return GCD(b, a % b);
+    }
+
+    private int LCM(int a, int b) {
+        return a * b / GCD(a, b);
+    }
 
     public void sortColors(int[] nums) {
         //https://leetcode.com/problems/sort-colors/description/
