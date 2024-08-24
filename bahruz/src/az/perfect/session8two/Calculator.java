@@ -11,4 +11,9 @@ public class Calculator {
     public int substraction(int a, int b) {
         return a - b;
     }
+
+    public boolean isTrue(){
+        return true;
+    }
+
 }

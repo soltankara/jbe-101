@@ -6,6 +6,7 @@ public class HomeWork2 {
 
     public static void main(String[] args) {
 
+
         //SCANNER HOMEWORK2
 
         Scanner sc = new Scanner(System.in);
