@@ -12,7 +12,7 @@ public class DsaMain {
         students.add(jan);
         students.add(jay);
 
-        System.out.println(findByName("Anar", students).orElseThrow(null));
+        System.out.println(findByName("Anar", students).orElse(null));
 
         remove(students, "J");
 
