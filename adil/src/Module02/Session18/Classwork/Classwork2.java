@@ -7,7 +7,7 @@ public class Classwork2 {
         List<Student> students = new ArrayList<>();
         Student st1 = new Student("Adil", Grade.A);
         Student st2 = new Student("Anar", Grade.A);
-        Student st3 = new Student("Joshgun", Grade.A);
+        Student st3 = new Student("Joshgun", Grade.B);
         students.add(st1);
         students.add(st2);
         students.add(st3);
@@ -16,9 +16,8 @@ public class Classwork2 {
 
         Map<Grade, List<Student>> map = new HashMap<>();
         for (Student student : students) {
-            List<Student> gradeList = map.getOrDefault(student.getGrade(), new ArrayList<>());
-            gradeList.add(student);
-            map.put(student.getGrade(), gradeList);
+            map.putIfAbsent(student.getGrade(), new ArrayList<>());
+            map.get(student.getGrade()).add(student);
         }
 
         System.out.println(map.get(Grade.A));
