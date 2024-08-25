@@ -2,6 +2,7 @@ package Data_str;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class Processing {
@@ -11,12 +12,12 @@ public class Processing {
         this.students = students;
     }
 
-    public Student getStudentByName(String name) {
+    public Optional<Student> getStudentByName(String name) {
         return students.stream()
                 .filter(student -> student.getName().equals(name))
-                .findFirst()
-                .orElse(null);
+                .findFirst();
     }
+
 
     public List<Student> getStudentsByGrade(Grade grade) {
         return students.stream()
