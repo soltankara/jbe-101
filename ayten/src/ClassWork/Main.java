@@ -4,8 +4,9 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
+    private static List<Student> students = new ArrayList<>();
+
     public static void main(String[] args) {
-        List<Student> students = new ArrayList<Student>();
         Student Leyla = new Student("Leyla", Grade.A);
         Student Nurcan = new Student("Nurcan", Grade.B);
         students.add(Leyla);
@@ -21,12 +22,13 @@ public class Main {
             Map<Grade, List<Student>> map = students.stream().collect(Collectors.groupingBy(Student::getGrade));
 
         }
+        removeByName("Leyla", students);
+        System.out.println("after removing");
+        students.forEach(student -> System.out.println(student.getGrade() + " " + student.getName()));
 
     }
 
     static Optional<Student> findByName(String name, List<Student> students) {
-        Scanner scanner = new Scanner(System.in);
-        name = scanner.nextLine();
         for (Student student : students) {
             if (student.getName().equalsIgnoreCase(name)) return Optional.of(student);
         }
@@ -41,10 +43,8 @@ public class Main {
         return update;
     }
 
-    static void removeByName(String name, List<Student> students) {
-        for (Student student : students) {
-            if (student.getName().equalsIgnoreCase(name)) students.remove(student);
-        }
+    public static void removeByName(String name, List<Student> students) {
+        students.removeIf(student -> student.getName().equalsIgnoreCase(name));
     }
 
 }
