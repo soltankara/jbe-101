@@ -2,7 +2,7 @@ package metods;
 
 import java.util.Arrays;
 
-public class IsEven {
+public class iseven {
     public static void main(String[] args) {
 
         System.out.println(sum(5, 2, 6, 8, 9, 3, 3, 7));
