@@ -39,7 +39,7 @@ public class Stream {
     }
 
     public static Integer greaterThanThree(List<String> list) {
-        return list.stream().filter(s -> s.length() > 3).toList().size();
+        return Math.toIntExact(list.stream().filter(word -> word.length() > 3).count());
     }
 
     public static Optional<Integer> findFirstGreaterThanFive(List<Integer> list) {
