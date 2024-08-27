@@ -1,11 +1,9 @@
 package Session19_ClassPractise;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-
 public class StudentOperations {
     public static Student findByName(List<Student> students, String name) {
         for (Student student : students) {

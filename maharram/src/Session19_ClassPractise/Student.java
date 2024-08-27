@@ -1,7 +1,6 @@
 package Session19_ClassPractise;
 import java.util.ArrayList;
 import java.util.List;
-
 public class Student {
     List<Student> students = new ArrayList<>();
     private String name;
