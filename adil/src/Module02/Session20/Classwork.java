@@ -3,6 +3,7 @@ package Module02.Session20;
 import java.util.*;
 
 import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.joining;
 
 public class Classwork {
     public static void main(String[] args) {
@@ -17,15 +18,15 @@ public class Classwork {
     }
 
     private static int task3(List<String> list) {
-        return list.stream().filter(n -> n.length() > 3).toList().size();
+        return (int) list.stream().filter(n -> n.length() > 3).count();
     }
 
     private static Optional<Integer> task4(List<Integer> list) {
         return list.stream().filter(n -> n > 5).findFirst();
     }
 
-    private static Optional<String> task5(List<String> list) {
-        return list.stream().reduce((s, s2) -> s + " " + s2);
+    private static String task5(List<String> list) {
+        return list.stream().collect(joining());
     }
 
     private static Map<Integer, List<String>> task6(List<String> list) {
