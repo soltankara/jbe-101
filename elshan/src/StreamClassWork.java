@@ -20,9 +20,9 @@ public class StreamClassWork {
 
         // 3
         List<String> words2 = Arrays.asList("java", "stream", "api", "code");
-        List<String> result3 = words2.stream()
+        long result3 = words2.stream()
                 .filter(s -> s.length() > 3)
-                .collect(Collectors.toList());
+                .count();
         System.out.println(result3);
 
         // 4
@@ -34,10 +34,8 @@ public class StreamClassWork {
 
         // 5
         List<String> words3 = Arrays.asList("java", "stream", "api", "lampda");
-        String result5 = words3.stream().reduce(
-                "",
-                (partialString, element) -> partialString + " " + element
-        );
+        String result5 = words3.stream()
+                .collect(Collectors.joining());
         System.out.println(result5);
 
         // 6
@@ -54,9 +52,8 @@ public class StreamClassWork {
 
         // 8
         List<Integer> numbers3 = Arrays.asList(1, 2, 3, 4, 5);
-        OptionalDouble average = numbers3.stream()
-                .mapToInt(Integer::intValue)
-                .average();
+        double average = numbers3.stream()
+                .collect(Collectors.averagingDouble(Integer::doubleValue));
         System.out.println(average);
     }
 
