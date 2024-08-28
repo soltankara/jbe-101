@@ -1,0 +1,5 @@
+Nurcan,A
+Aylin,A
+Ləman,B
+Mira,C
+Şəbnəm,E
