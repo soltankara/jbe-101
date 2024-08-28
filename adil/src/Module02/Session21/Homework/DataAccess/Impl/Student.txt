@@ -1,0 +1,5 @@
+Student{name='Adil', grade=B}
+Student{name='Anar', grade=A}
+Student{name='Sabuhi', grade=B}
+Student{name='Zaur', grade=D}
+Student{name='Joshgun', grade=C}
