@@ -21,4 +21,15 @@ public class Student {
     public String toString() {
         return "Student{name='" + name + "', grade=" + grade + "}";
     }
+
+    public String toFileString() {
+        return name + "," + grade;
+    }
+
+    public static Student fromFileString(String fileString) {
+        String[] parts = fileString.split(",");
+        String name = parts[0];
+        Grade grade = Grade.valueOf(parts[1]);
+        return new Student(name, grade);
+    }
 }
