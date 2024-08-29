@@ -1,0 +1,6 @@
+Anar,A
+Adil,B
+Cosqun,C
+Kamil,E
+Orxan,A
+Josh,D
