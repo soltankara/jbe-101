@@ -76,9 +76,9 @@ public class StudentManager {
 
     }
 
-    public  List<Student> removeStudentsByText( String text) {
+    public void removeStudentsByText(String text) {
         students.removeIf(student -> student.getName().contains(text));
-        return students;
+
 
     }
 

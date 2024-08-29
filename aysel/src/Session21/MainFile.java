@@ -19,7 +19,7 @@ public class MainFile {
         }
 
         System.out.println(manager.findByGrade(Grade.A));
-        System.out.println(manager.removeStudentsByText("n"));
+        manager.removeStudentsByText("n");
         System.out.println(manager.groupStudentsByGrade());
 
 
