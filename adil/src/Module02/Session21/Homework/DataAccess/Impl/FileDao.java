@@ -15,12 +15,13 @@ import java.util.regex.Pattern;
 import static java.util.stream.Collectors.groupingBy;
 
 public class FileDao implements Dao<Student> {
-    private static final String FILEPATH = "adil/src/Module02/Session21/Homework/DataAccess/Impl/Student.txt";
+    private static final String FILEPATH =
+            "adil/src/Module02/Session21/Homework/DataAccess/Impl/Student.txt";
 
     @Override
     public void save(Student student) {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(FILEPATH, true))) {
-            bw.write(student.toString() + "\n");
+            bw.write(student.getName() + ", " + student.getGrade() + "\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -32,20 +33,9 @@ public class FileDao implements Dao<Student> {
         try (BufferedReader br = new BufferedReader(new FileReader(FILEPATH))) {
             while (br.ready()) {
                 String line = br.readLine();
-                Pattern namePattern = Pattern.compile("name='(.*?)'");
-                Pattern gradePattern = Pattern.compile("grade=(.*?)}");
-                Matcher nameMatcher = namePattern.matcher(line);
-                Matcher gradeMatcher = gradePattern.matcher(line);
-                Student student = new Student();
-                if (nameMatcher.find()) {
-                    String name = nameMatcher.group(1);
-                    student.setName(name);
-                }
-                if (gradeMatcher.find()) {
-                    String grade = gradeMatcher.group(1);
-                    student.setGrade(Grade.valueOf(grade));
-                }
-                students.add(student);
+                String name = line.substring(0, line.indexOf(","));
+                String grade = line.substring(line.indexOf(",") + 2);
+                students.add(new Student(name, Grade.valueOf(grade)));
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -54,7 +44,8 @@ public class FileDao implements Dao<Student> {
     }
 
     public Optional<Student> findByName(String name) {
-        return findAll().stream().filter(student -> student.getName().equalsIgnoreCase(name)).findFirst();
+        return findAll().stream().filter(student -> student.getName().equalsIgnoreCase(name))
+                .findFirst();
     }
 
     public List<Student> findAllByGrade(Grade grade) {
@@ -62,11 +53,11 @@ public class FileDao implements Dao<Student> {
     }
 
     public void deleteBySubstring(String substring) {
-        List<Student> students = findAll().stream().filter(student -> !student.getName().contains(substring))
-                .toList();
+        List<Student> students = findAll().stream().filter(student -> !student.getName()
+                .contains(substring)).toList();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILEPATH))) {
             for (Student student : students) {
-                writer.write(student.toString() + "\n");
+                writer.write(student.getName() + ", " + student.getGrade() + "\n");
             }
         } catch (IOException e) {
             e.printStackTrace();
