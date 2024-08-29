@@ -1,6 +1,9 @@
 package az.turing.session19;
 
+import az.turing.session21.file.FileUtility;
+
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
 
@@ -9,6 +12,7 @@ public class Main {
     public static void main(String[] args) {
 
 
+        //task1
         Student s1 = new Student("Turgut", Grade.A);
         Student s2 = new Student("Sənan", Grade.B);
         Student s3 = new Student("Səbuhi", Grade.C);
@@ -21,8 +25,7 @@ public class Main {
         list.add(s5);
 
         //Task2
-        System.out.println(findByName("Ayxan"));
-        System.out.println("Senan");
+        System.out.println(findByName("Turgut"));
 
         //Task3
         System.out.println(gradeStudent(Grade.B));
@@ -37,29 +40,38 @@ public class Main {
             map.getOrDefault(s.getGrade(), new ArrayList<>());
         }
 
-        System.out.println(map);
+
+        //LastHomeWork
+
+        //fayla yazmaq
+        try {
+            FileUtility.writeObjectToFile(s1, "s1.obj");
+            FileUtility.writeObjectToFile(s2, "s2.obj");
+            FileUtility.writeObjectToFile(s3, "s3.obj");
+            FileUtility.writeObjectToFile(s4, "s4.obj");
+            FileUtility.writeObjectToFile(s5, "s5.obj");
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+
+        //fayldan oxumaq
+        try {
+            System.out.println(FileReadAndWrite.readObjectFromFile("s1.obj"));
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
 
     }
 
     public static Optional<Student> findByName(String name) {
-        for (Student s : list) {
-            if (s.getName().equals(name)) {
-                return Optional.of(s);
-            }
-        }
-        return Optional.empty();
+        return list.stream().filter(student -> student.getName().equals(name)).findFirst();
     }
 
     public static List<Student> gradeStudent(Grade grade) {
+        return list.stream().filter(student -> student.getGrade().equals(grade)).collect(Collectors.toList());
 
-        List<Student> result = new ArrayList<>();
-        for (Student student : list) {
-            if (student.getGrade() == grade) {
-                result.add(student);
-            }
-        }
-        return result;
     }
 
     public static void removeElement(String text) {

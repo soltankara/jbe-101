@@ -1,6 +1,8 @@
 package az.turing.session19;
 
-public class Student {
+import java.io.Serializable;
+
+public class Student implements Serializable {
     private String name;
     private Grade grade;
 
