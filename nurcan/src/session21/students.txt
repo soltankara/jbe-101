@@ -2,4 +2,5 @@ Nurcan,A
 Aylin,A
 Ləman,B
 Mira,C
+Nərgiz,D
 Şəbnəm,E

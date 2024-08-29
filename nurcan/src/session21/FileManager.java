@@ -1,19 +1,20 @@
 package session21;
 
+import session19.Grade;
+
 import java.io.*;
-import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class FileManager {
     public static void main(String[] args) {
-        System.out.println(readStudents("C:\\Users\\ACER\\IdeaProjects\\jbe-101\\jbe-101\\nurcan\\src\\session21\\students.txt"));
-        findByName("Nurcan", "C:\\Users\\ACER\\IdeaProjects\\jbe-101\\jbe-101\\nurcan\\src\\session21\\students.txt");
-        findByGrade("A", "C:\\Users\\ACER\\IdeaProjects\\jbe-101\\jbe-101\\nurcan\\src\\session21\\students.txt");
-        removeStudent("giz", "C:\\Users\\ACER\\IdeaProjects\\jbe-101\\jbe-101\\nurcan\\src\\session21\\students.txt");
-        System.out.println(createMap("C:\\Users\\ACER\\IdeaProjects\\jbe-101\\jbe-101\\nurcan\\src\\session21\\students.txt"));
+        List<Student> students = readStudents("C:\\Users\\ACER\\IdeaProjects\\jbe-101\\jbe-101\\nurcan\\src\\session21\\students.txt");
+        System.out.println(students);
+        System.out.println(findByName("Nurcan", students));
+        System.out.println(findByGrade("A", students));
+        System.out.println(removeStudent("Nər", students));
+        System.out.println(createMap(students));
+        System.out.println(updateStudent("Aylin", "B", students));
     }
 
     public static List<Student> readStudents(String fileName) {
@@ -34,85 +35,30 @@ public class FileManager {
         return students;
     }
 
-    public static void findByName(String name, String fileName) {
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)))) {
-            String line;
-            boolean flag = false;
-            while ((line = br.readLine()) != null) {
-                String[] student = line.split(",");
-                if (student[0].equalsIgnoreCase(name)) {
-                    System.out.println("Name: " + student[0] + ", grade: " + student[1]);
-                    flag = true;
-                    break;
-                }
-            }
-            if (!flag) {
-                System.out.println("Not found");
-            }
-        } catch (IOException exception) {
-            exception.printStackTrace();
-        }
+    public static Optional<Student> findByName(String name, List<Student> students) {
+        return students.stream().filter(student -> student.getName().equals(name)).findFirst();
     }
 
-    public static void findByGrade(String grade, String fileName) {
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)))) {
-            String line;
-            boolean flag = false;
-            while ((line = br.readLine()) != null) {
-                String[] student = line.split(",");
-                if (student[1].equalsIgnoreCase(grade)) {
-                    System.out.println("Name: " + student[0] + ", grade: " + student[1]);
-                    flag = true;
-                }
-            }
-            if (!flag) {
-                System.out.println("Not found");
-            }
-        } catch (IOException exception) {
-            exception.printStackTrace();
-        }
+    public static List<Student> findByGrade(String grade, List<Student> students) {
+        return students.stream().filter(student -> student.getGrade().equals(grade)).collect(Collectors.toList());
     }
 
-    public static void removeStudent(String text, String fileName) {
-        List<String> students = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                String[] student = line.split(",");
-                if (!student[0].contains(text)) {
-                    students.add(line);
-                }
-            }
-        } catch (IOException exception) {
-            exception.printStackTrace();
-        }
-        try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(fileName)))) {
-            for (String student : students) {
-                bw.write(student);
-                bw.newLine();
-            }
-        } catch (IOException exception) {
-            exception.printStackTrace();
-        }
-        System.out.println("After deletion: " + students);
+    public static List<Student> removeStudent(String text, List<Student> students) {
+        students.removeIf(student -> student.getName().contains(text));
+        return students;
     }
 
-    public static Map<String, Student> createMap(String fileName) {
-        Map<String, Student> map = new HashMap<>();
-        List<String> students = new ArrayList<>();
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(fileName)))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                String[] student = line.split(",");
-                if (student.length == 2) {
-                    String name = student[0];
-                    String grade = student[1];
-                    map.put(grade, new Student(name, grade));
-                }
+    public static Map<String, List<Student>> createMap(List<Student> students) {
+        return students.stream().collect(Collectors.groupingBy(Student::getGrade));
+    }
+
+    public static List<Student> updateStudent(String name, String newGrade, List<Student> students) {
+        for (Student student : students) {
+            if (student.getName().equalsIgnoreCase(name)) {
+                student.setGrade(newGrade);
+                break;
             }
-        } catch (IOException exception) {
-            exception.printStackTrace();
         }
-        return map;
+        return students;
     }
 }
