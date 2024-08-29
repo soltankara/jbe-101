@@ -24,16 +24,11 @@ public class Stream {
         System.out.println(upper);
 
         //3. Count strings with Length greater than 3
-        long count = words2.stream()
-                .filter(w -> w.length() > 3)
-                .count();
-        System.out.println(count);
 
         //4. Find the first element that is greater than 5
         Optional<Integer> greater = numbers2.stream()
                 .filter(i -> i > 5)
                 .findFirst();
-                greater.ifPresent(System.out::println);
 
         //5. Concatenate Strings
         String concatenatedString = words3.stream()
