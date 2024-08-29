@@ -9,7 +9,22 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class StudentManager {
+    private List<Student>students;
+
+    public StudentManager() {
+        this.students = readWithReader("Students.txt");
+    }
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    public void setStudents(List<Student> students) {
+        this.students = students;
+    }
+
     static void writeWithWriter() {
+
         try (BufferedWriter writer = new BufferedWriter(new FileWriter("Students.txt"))) {
             writer.write("Nurcan,A");
             writer.newLine();
@@ -48,12 +63,12 @@ public class StudentManager {
         return students;
     }
 
-    public static Student findByName(List<Student> students, String name) {
+    public  Student findByName( String name) {
         return students.stream().filter(student -> student.getName().equalsIgnoreCase(name)).findFirst().orElse(null);
 
     }
 
-    public static List<Student> findByGrade(Grade grade, List<Student> students) {
+    public  List<Student> findByGrade(Grade grade) {
         List<Student> studentsWithGrade = students.stream()
                 .filter(student -> student.getGrade() == grade)
                 .toList();
@@ -61,13 +76,13 @@ public class StudentManager {
 
     }
 
-    public static List<Student> removeStudentsByText(List<Student> students, String text) {
+    public  List<Student> removeStudentsByText( String text) {
         students.removeIf(student -> student.getName().contains(text));
         return students;
 
     }
 
-    public static Map<Grade, List<Student>> groupStudentsByGrade(List<Student> students) {
+    public Map<Grade, List<Student>> groupStudentsByGrade() {
         Map<Grade, List<Student>> map = students.stream().collect(Collectors.groupingBy(Student::getGrade));
         return map;
     }
