@@ -1,9 +1,6 @@
 package az.turing.session20;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class ClassWork {
@@ -50,6 +47,16 @@ public class ClassWork {
         //Task8
         List<Integer> numbers1 = Arrays.asList(1, 2, 3, 4, 5);
         Double avarage = numbers1.stream().mapToInt(Integer::intValue).average().orElse(0.0);
+        System.out.println("=--------------------------");
+
+        Map<Integer ,String> map=new HashMap<>();
+        map.put(1,"A");
+        map.put(2,"B");
+        map.put(1,"C");
+        map.put(null,"D");
+        map.put(null,"E");
+        System.out.println(map);
+        System.out.println(map.keySet());
 
 
     }
