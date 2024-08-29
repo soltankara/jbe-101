@@ -17,6 +17,11 @@ import static java.util.stream.Collectors.groupingBy;
 public class FileDao implements Dao<Student> {
     private static final String FILEPATH =
             "adil/src/Module02/Session21/Homework/DataAccess/Impl/Student.txt";
+    private static List<Student> students = new ArrayList<>();
+
+    public FileDao() {
+        students = findAll();
+    }
 
     @Override
     public void save(Student student) {
@@ -25,6 +30,7 @@ public class FileDao implements Dao<Student> {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        students.add(student);
     }
 
     @Override
@@ -44,16 +50,16 @@ public class FileDao implements Dao<Student> {
     }
 
     public Optional<Student> findByName(String name) {
-        return findAll().stream().filter(student -> student.getName().equalsIgnoreCase(name))
+        return students.stream().filter(student -> student.getName().equalsIgnoreCase(name))
                 .findFirst();
     }
 
     public List<Student> findAllByGrade(Grade grade) {
-        return findAll().stream().filter(student -> student.getGrade().equals(grade)).toList();
+        return students.stream().filter(student -> student.getGrade().equals(grade)).toList();
     }
 
     public void deleteBySubstring(String substring) {
-        List<Student> students = findAll().stream().filter(student -> !student.getName()
+        students = students.stream().filter(student -> !student.getName()
                 .contains(substring)).toList();
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILEPATH))) {
             for (Student student : students) {
@@ -65,6 +71,6 @@ public class FileDao implements Dao<Student> {
     }
 
     public Map<Grade, List<Student>> createMapByGrade() {
-        return findAll().stream().collect(groupingBy(Student::getGrade));
+        return students.stream().collect(groupingBy(Student::getGrade));
     }
 }
