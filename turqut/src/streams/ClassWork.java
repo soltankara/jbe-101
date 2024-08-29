@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import static java.util.stream.Collectors.groupingBy;
+import static java.util.stream.Collectors.joining;
 
 public class ClassWork {
     public static void main(String[] args) {
@@ -39,8 +40,8 @@ public class ClassWork {
 
         //Task 5 - Concatenate Strings
         List<String> words3 = Arrays.asList("java", "stream", "api");
-        String concatenatedWords = words.stream()
-                .reduce("", (concat, word) -> concat + word + "");
+        String concatenatedWords = words3.stream()
+                .collect(joining(" "));
         System.out.println("Concatenated words: " + concatenatedWords);
 
         //Task 6 - Group strings by their length
