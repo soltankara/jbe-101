@@ -7,14 +7,15 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class FileManager {
+    public static List<Student> students = readStudents("C:\\Users\\ACER\\IdeaProjects\\jbe-101\\jbe-101\\nurcan\\src\\session21\\students.txt");
+
     public static void main(String[] args) {
-        List<Student> students = readStudents("C:\\Users\\ACER\\IdeaProjects\\jbe-101\\jbe-101\\nurcan\\src\\session21\\students.txt");
         System.out.println(students);
-        System.out.println(findByName("Nurcan", students));
-        System.out.println(findByGrade("A", students));
-        System.out.println(removeStudent("Nər", students));
-        System.out.println(createMap(students));
-        System.out.println(updateStudent("Aylin", "B", students));
+        System.out.println(findByName("Nurcan"));
+        System.out.println(findByGrade("A"));
+        System.out.println(removeStudent("Nər"));
+        System.out.println(createMap());
+        System.out.println(updateStudent("Aylin", "B"));
     }
 
     public static List<Student> readStudents(String fileName) {
@@ -35,24 +36,24 @@ public class FileManager {
         return students;
     }
 
-    public static Optional<Student> findByName(String name, List<Student> students) {
+    public static Optional<Student> findByName(String name) {
         return students.stream().filter(student -> student.getName().equals(name)).findFirst();
     }
 
-    public static List<Student> findByGrade(String grade, List<Student> students) {
+    public static List<Student> findByGrade(String grade) {
         return students.stream().filter(student -> student.getGrade().equals(grade)).collect(Collectors.toList());
     }
 
-    public static List<Student> removeStudent(String text, List<Student> students) {
+    public static List<Student> removeStudent(String text) {
         students.removeIf(student -> student.getName().contains(text));
         return students;
     }
 
-    public static Map<String, List<Student>> createMap(List<Student> students) {
+    public static Map<String, List<Student>> createMap() {
         return students.stream().collect(Collectors.groupingBy(Student::getGrade));
     }
 
-    public static List<Student> updateStudent(String name, String newGrade, List<Student> students) {
+    public static List<Student> updateStudent(String name, String newGrade) {
         for (Student student : students) {
             if (student.getName().equalsIgnoreCase(name)) {
                 student.setGrade(newGrade);
