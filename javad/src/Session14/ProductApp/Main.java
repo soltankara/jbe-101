@@ -1,7 +1,5 @@
 package Session14.ProductApp;
 
-import Session14.ProductApp.*;
-
 import java.util.Date;
 import java.util.Scanner;
 
@@ -83,9 +81,7 @@ public class Main {
                     Product[] products = productManager.listProducts();
                     for (Product product : products) {
                         if (product != null) {
-                            System.out.println("ID: " + product.getId() + ", Name: " + product.getName() +
-                                    ", Price: " + product.getPrice() + ", ProductType: " + product.getProductType().getName() +
-                                    ", ProductCategory: " + product.getProductType().getProductCategory().getName()+", Stock status: "+product.isHasStock());
+                            System.out.println(product.toString());
                         }
                     }
                     break;

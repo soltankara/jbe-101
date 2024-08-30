@@ -1,7 +1,6 @@
 package Session14.ProductApp;
 
-import Session14.ProductApp.ProductManager;
-
+import java.util.Arrays;
 import java.util.Date;
 
 public class ProductManagerImpl implements ProductManager {
@@ -11,6 +10,11 @@ public class ProductManagerImpl implements ProductManager {
     public ProductManagerImpl(int size) {
         this.products = new Product[size];
         this.count = 0;
+    }
+
+    @Override
+    public String toString() {
+        return STR."ProductManagerImpl{products=\{Arrays.toString(products)}, count=\{count}\{'}'}";
     }
 
     @Override
