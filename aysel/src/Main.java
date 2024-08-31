@@ -1,4 +1,4 @@
-import ClassPractice.Duck;
+
 import Session11.*;
 import Session11.Book;
 import Session11.Dog;
@@ -17,10 +17,10 @@ public class Main {
 
 
 
-       Duck duck =new Duck();
-        duck.setName("Duffy");
-        duck.swim();
-        duck.fly();
+     //  Duck duck =new Duck();
+       // duck.setName("Duffy");
+       // duck.swim();
+      //  duck.fly();
 
 
         // Ev tapsiriqlari burdan baslayir
