@@ -1,0 +1,6 @@
+Cavad,B
+Adil,A
+Hamzat,C
+Musa,B
+Yusif,D
+Qedir,E
