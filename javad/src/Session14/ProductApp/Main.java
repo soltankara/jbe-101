@@ -81,7 +81,7 @@ public class Main {
                     Product[] products = productManager.listProducts();
                     for (Product product : products) {
                         if (product != null) {
-                            System.out.println(product.toString());
+                            System.out.println(product);
                         }
                     }
                     break;
