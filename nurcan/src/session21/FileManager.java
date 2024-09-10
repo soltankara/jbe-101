@@ -7,9 +7,13 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 public class FileManager {
-    public static List<Student> students = readStudents("C:\\Users\\ACER\\IdeaProjects\\jbe-101\\jbe-101\\nurcan\\src\\session21\\students.txt");
+    public static List<Student> students;
 
+    public static void initializeStudents() {
+        students = readStudents("C:\\Users\\ACER\\IdeaProjects\\jbe-101\\jbe-101\\nurcan\\src\\session21\\students.txt");
+    }
     public static void main(String[] args) {
+        initializeStudents();
         System.out.println(students);
         System.out.println(findByName("Nurcan"));
         System.out.println(findByGrade("A"));
