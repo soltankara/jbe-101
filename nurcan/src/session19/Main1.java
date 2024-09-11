@@ -34,7 +34,7 @@ public class Main1 {
     }
 
     public static List<Student> removeStudent(String text, List<Student> students) {
-        return students.stream().filter(student -> student.getName().contains(text)).collect(Collectors.toList());
+        return students.stream().filter(student -> !student.getName().contains(text)).collect(Collectors.toList());
     }
 
     public static Map<Grade, List<Student>> createMap(List<Student> students) {
