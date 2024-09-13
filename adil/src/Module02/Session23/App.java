@@ -2,20 +2,16 @@ package Module02.Session23;
 
 public class App {
     public static void main(String[] args) {
-//        print();
-//        try {
-//            Thread.sleep(2000);
-//        } catch (InterruptedException e) {
-//            throw new RuntimeException(e);
-//        }
-//        System.out.println("I am here");
-        System.out.println(Thread.currentThread().getName());
-        Thread thread = new CustomThread();
-        thread.start();
-        thread.run();
+        print();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("I am here");
     }
 
-    //    private static void print() {
+//    private static void print() {
 //        Thread thread = new MyThread();
 //        thread.start();
 //        try {
@@ -24,6 +20,7 @@ public class App {
 //            throw new RuntimeException(e);
 //        }
 //    }
+
     private static void print() {
         Runnable runnable = () -> {
             for (int i = 1; i < 11; i++) {
