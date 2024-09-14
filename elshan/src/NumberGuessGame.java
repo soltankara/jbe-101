@@ -5,9 +5,9 @@ public class NumberGuessGame {
     public static void main(String[] args) {
         Random random = new Random();
         int number = random.nextInt(10);
-        System.out.println(number);
+
         while (true){
-            System.out.println("Enter a number between 0 - 100 :");
+            System.out.println("Enter a number between 0 - 10 :");
             Scanner scanner = new Scanner(System.in);
             int inputNumber = scanner.nextInt();
             if (inputNumber == number){
