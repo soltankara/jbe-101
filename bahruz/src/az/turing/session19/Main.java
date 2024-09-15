@@ -23,22 +23,22 @@ public class Main {
         list.add(s3);
         list.add(s4);
         list.add(s5);
-
-        //Task2
-        System.out.println(findByName("Turgut"));
-
-        //Task3
-        System.out.println(gradeStudent(Grade.B));
-
-        //Task4
-        System.out.println("After removed some elements : ");
-        removeElement("Sə");
-
-        //Task5
-        Map<Grade, List<Student>> map = new HashMap<>();
-        for (Student s : list) {
-            map.getOrDefault(s.getGrade(), new ArrayList<>());
-        }
+//
+//        //Task2
+//        System.out.println(findByName("Turgut"));
+//
+//        //Task3
+//        System.out.println(gradeStudent(Grade.B));
+//
+//        //Task4
+//        System.out.println("After removed some elements : ");
+//        removeElement("Sə");
+//
+//        //Task5
+//        Map<Grade, List<Student>> map = new HashMap<>();
+//        for (Student s : list) {
+//            map.getOrDefault(s.getGrade(), new ArrayList<>());
+//        }
 
 
         //LastHomeWork

@@ -50,15 +50,15 @@ public class StudentUtil {
             sizeNullStudent();
             String text = InputUtil.getText("Type what you want to search for");
             for (int i = 0; i < Base.students.length; i++) {
-                if (Base.students[i].getName().equals(text) ||
-                        Base.students[i].getSurname().equals(text) ||
-                        Base.students[i].getGroup().equals(text)) {
+                if (Base.students[i].getName().equalsIgnoreCase(text) ||
+                        Base.students[i].getSurname().equalsIgnoreCase(text) ||
+                        Base.students[i].getGroup().equalsIgnoreCase(text)) {
                     System.out.println(Base.students[i]);
                 } else {
                     throw new IllegalArgumentException("No student was found matching the information you entered!");
                 }
             }
-        } catch (StudentException studentException) {
+        } catch (StudentException |IllegalArgumentException studentException) {
             System.out.println(studentException.getLocalizedMessage());
         }
     }
