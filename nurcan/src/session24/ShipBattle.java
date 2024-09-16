@@ -18,10 +18,8 @@ public class ShipBattle {
         String target = arr[row][column];
         System.out.println("All set. Get ready to rumble!");
         while (true) {
-            System.out.print("Enter row number: ");
-            int entRow = scan.nextInt() - 1;
-            System.out.print("Enter column number: ");
-            int entColumn = scan.nextInt() - 1;
+            int entRow = getValidInput(scan, "Enter row number: ") - 1;
+            int entColumn = getValidInput(scan, "Enter column number: ") - 1;
             if ((entRow >= 0 && entRow < 5) && (entColumn >= 0 && entColumn < 5)) {
                 if (entRow == row && entColumn == column) {
                     System.out.println("You have won!");
@@ -30,8 +28,6 @@ public class ShipBattle {
                 } else {
                     arr[entRow][entColumn] = "*";
                 }
-            } else {
-                System.out.println("Invalid input, please, enter again.");
             }
             print(arr);
         }
@@ -51,6 +47,22 @@ public class ShipBattle {
             }
             System.out.println();
         }
+    }
+
+    public static int getValidInput(Scanner scan, String message) {
+        int number = -1;
+        boolean flag = false;
+        while (!flag) {
+            System.out.print(message);
+            String input = scan.next();
+            try {
+                number = Integer.parseInt(input);
+                flag = true;
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input, please, enter again.");
+            }
+        }
+        return number;
     }
 
 }
