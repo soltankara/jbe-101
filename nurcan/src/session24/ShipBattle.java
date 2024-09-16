@@ -33,19 +33,12 @@ public class ShipBattle {
             } else {
                 System.out.println("Invalid input, please, enter again.");
             }
-            System.out.print("0 |");
-            for (int j = 0; j < arr[0].length; j++) {
-                System.out.print(" " + (j + 1) + " |");
-            }
-            System.out.println();
-            for (int i = 0; i < arr.length; i++) {
-                System.out.print((i + 1) + " |");
-                for (int j = 0; j < arr[0].length; j++) {
-                    System.out.print(" " + arr[i][j] + " |");
-                }
-                System.out.println();
-            }
+            print(arr);
         }
+        print(arr);
+    }
+
+    public static void print(String[][] arr) {
         System.out.print("0 |");
         for (int j = 0; j < arr[0].length; j++) {
             System.out.print(" " + (j + 1) + " |");
@@ -59,4 +52,5 @@ public class ShipBattle {
             System.out.println();
         }
     }
+
 }
