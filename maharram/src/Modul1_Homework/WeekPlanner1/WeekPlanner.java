@@ -1,4 +1,5 @@
 package Modul1_Homework.WeekPlanner1;
+import java.util.Optional;
 public class WeekPlanner {
     private Day[] schedule;
 
@@ -13,23 +14,23 @@ public class WeekPlanner {
         schedule[6] = new Day("Saturday", "attend a conference");
     }
 
-    public Day findDay(String dayName) {
+    public Optional<Day> findDay(String dayName) {
         for (Day day : schedule) {
             if (day.getName().equalsIgnoreCase(dayName.trim())) {
-                return day;
+                return Optional.of(day);
             }
         }
-        return null;
+        return Optional.empty();
     }
 
     public void changeTasks(String dayName, String newTasks) {
-        Day day = findDay(dayName);
-        if (dayName != null) {
-            day.setTasks(newTasks);
-        }
+        Optional<Day> optionalDay = findDay(dayName);
+        optionalDay.ifPresent(day -> day.setTasks(newTasks));
     }
 
     public Day[] getSchedule() {
         return schedule;
     }
 }
+
+
