@@ -29,7 +29,7 @@ public class TaskManager {
         String dayToChange = input.substring(input.indexOf(' ') + 1).trim();
         Optional<Day> dayOptional = planner.findDay(dayToChange);
         dayOptional.ifPresentOrElse(day -> {
-            System.out.print("pls enter new task for  " + capitalize(day.getName()) + " : ");
+            System.out.print("pls enter new task for  " + day.getName() + " : ");
             String newTaskss = sc.nextLine();
             planner.changeTasks(dayToChange, newTaskss);
             System.out.println("tasks updated.");
@@ -39,14 +39,7 @@ public class TaskManager {
     public void showTasks(String dayName) {
         Optional<Day> dayOptional = planner.findDay(dayName);
         dayOptional.ifPresentOrElse(day -> {
-            System.out.println("your tasks for " + capitalize(day.getName()) + " : " + day.getTasks());
+            System.out.println("your tasks for " + day.getName() + " : " + day.getTasks());
         }, () -> System.out.println("sorry l don't get it ,pls repeat again ."));
-    }
-
-    private String capitalize(String word) {
-        if (word != null || word.isEmpty()) {
-            return word;
-        }
-        return word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
     }
 }
