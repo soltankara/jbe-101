@@ -44,15 +44,14 @@ public class Task1A {
             numbers[count] = number;
             count++;
             enteredNumbers = Arrays.copyOf(numbers, count);
-         
+
 
         }
 
         System.out.println("\nCongrats " + name.toUpperCase() + "! You have won the game after " + count + " times!\n");
+        System.out.println("Game has finished!!!");
         Arrays.sort(enteredNumbers);
         System.out.println("the numbers you entered: " + Arrays.toString(enteredNumbers));
-
-
 
 
     }
