@@ -11,6 +11,11 @@ public class ProductType {
         this.productCategory = productCategory;
     }
 
+    @Override
+    public String toString() {
+        return STR."ProductType{name='\{name}\{'\''}, status='\{status}\{'\''}, productCategory=\{productCategory}\{'}'}";
+    }
+
     // Getter ve Setter'lar
     public String getName() {
         return name;

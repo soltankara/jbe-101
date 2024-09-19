@@ -21,6 +21,11 @@ public class Product {
         this.productType = productType;
     }
 
+    @Override
+    public String toString() {
+        return STR."Product{id=\{id}, name='\{name}\{'\''}, price=\{price}, hasStock=\{hasStock}, createdAt=\{createdAt}, modifiedAt=\{modifiedAt}, productType=\{productType}\{'}'}";
+    }
+
     // Getter ve Setter
     public int getId() {
         return id;

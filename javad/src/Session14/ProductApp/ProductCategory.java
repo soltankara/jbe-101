@@ -7,6 +7,11 @@ public class ProductCategory {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return STR."ProductCategory{name='\{name}\{'\''}\{'}'}";
+    }
+
     // Getter ve Setter
     public String getName() {
         return name;

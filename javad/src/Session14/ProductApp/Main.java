@@ -1,7 +1,5 @@
 package Session14.ProductApp;
 
-import Session14.ProductApp.*;
-
 import java.util.Date;
 import java.util.Scanner;
 
